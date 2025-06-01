@@ -54,11 +54,12 @@ text-muted
 
 {{% /blocks/lead %}}
 
-{{% blocks/section color="dark" type="row" %}}
-A game about The Netherlands
+<!-- Section 1 -->
+{{% blocks/section color="dark" %}}
+Jokes about The Netherlands
 {.h1 .text-center .mb-4}
 
-<i class="fa fa-pills"></i> Paracetamol heals everything!
+<i class="fa fa-pills"></i> 1. Paracetamol heals everything!
 {.h3 .text-center}
 
 When you visit GP, they will often suggest you to take paracetamol with hot water, and you will be fine.
@@ -74,7 +75,24 @@ In China a doctor will see 50 - 100 patients a day, which is about 5 - 10 minute
 
 {{% /blocks/section %}}
 
-{{% blocks/section color="dark" type="row" %}}
+<!-- Section 2, light blue -->
+{{% blocks/section %}}
+
+<i class="fa fa-train"></i> 2. The weather is too hot so the trains are not running!
+{.h3 .text-center}
+The weather is too hot (40°C) so the trains are not running.
+
+---
+
+_Did you know_:
+{.text-success}
+
+Chinese high speed trains run all year around from -20°C to 40°C, and they are designed to run in extreme weather conditions.
+{.text-success}
+
+{{% /blocks/section %}}
+
+{{% blocks/section type="row" %}}
 
 {{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
 The Goldydocs UI now shows chair size metrics by default.
