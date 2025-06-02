@@ -145,7 +145,7 @@ params:
   prism_syntax_highlighting: false
 
   copyright:
-    authors: Yicong Chen | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) |
+    authors: Yc-Chen | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) |
     from_year: 2025
 
   # User interface configuration
