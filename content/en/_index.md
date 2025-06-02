@@ -107,7 +107,7 @@ Fish...fried, bitterballen(meat mixture)...fried, kroket(meat mixture)...fried, 
 
 <!-- Section 4, gray -->
 {{% blocks/section %}}
-<i class="fa fa-bullhorn"></i> 4. People talk really loud in public as if no one else exists.
+<i class="fa fa-bullhorn"></i> 4. People talk really loud in public spaces like libraries, as if no one else exists.
 {.h3 .text-center}
 
 ---
