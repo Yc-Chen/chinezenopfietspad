@@ -25,11 +25,8 @@ title: Chinese op Fietspad
 -- This website means no offense to anyone,
 but aims to bring more awareness for the systemic discrimination against Chinese and other Asian people in The Netherlands and beyond.
 
-TODO: brainstorm examples
-dog eating. NiHao cat calling. city life, short opening hours.
+<!-- TODO: brainstorm examples
 title: (Culture) shocks Chinese encounter in The Netherlands.
-
-TODO clean up these examples:
 
 text-primary
 {.text-primary}
@@ -53,7 +50,7 @@ text-dark
 {.text-dark}
 
 text-muted
-{.text-muted}
+{.text-muted} -->
 
 
 {{% /blocks/lead %}}
