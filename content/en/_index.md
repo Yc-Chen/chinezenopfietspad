@@ -15,15 +15,19 @@ title: Chinese op Fietspad
 
 
 {{% blocks/lead color="primary" %}}
-'Chinese tourists op fiest pad - ga terug naar vak 39!'
-{.h2}
+'Chinese toeristen blokkeren het fietspad. Om ze te ontwijken ga je terug naar vakje 39.'
+{.h2 .mb-4}
 
--- This is a game joke in [Amsterdam 750 Jarig book](https://pavlovpubliceert.nl/voor/kinderen/amsterdam/), which will be given to **60000** primary school children.
+-- This is a game joke found in [Amsterdam 750 Jarig book](https://pavlovpubliceert.nl/voor/kinderen/amsterdam/), a book that will be given to **60000** primary school children.
 
--- As a Chinese, I feel so special to be the addressed in this joke, so I decided to create a website for it.
+-- As a Chinese, I feel so special to be the only nationality addressed in this book, so I decided to create a website for it.
 
 -- This website means no offense to anyone,
 but aims to bring more awareness for the systemic discrimination against Chinese and other Asian people in The Netherlands and beyond.
+
+TODO: brainstorm examples
+dog eating. NiHao cat calling. city life, short opening hours.
+title: (Culture) shocks Chinese encounter in The Netherlands.
 
 TODO clean up these examples:
 
@@ -90,6 +94,23 @@ _Did you know_:
 Chinese high speed trains run all year around from -20°C to 40°C, and they are designed to run in extreme weather conditions.
 {.text-success}
 
+{{% /blocks/section %}}
+
+<!-- Section 3, white -->
+{{% blocks/section %}}
+<i class="fa fa-hotdog"></i> 3. The only way to make something tasty is to fry it.
+{.h3 .text-center}
+Fish...fried, bitterballen(meat mixture)...fried, kroket(meat mixture)...fried, frikandel(meat mixture)...fried, patat(potato)...fried, and so on.
+
+---
+{{% /blocks/section %}}
+
+<!-- Section 4, gray -->
+{{% blocks/section %}}
+<i class="fa fa-bullhorn"></i> 4. People talk really loud in public as if no one else exists.
+{.h3 .text-center}
+
+---
 {{% /blocks/section %}}
 
 {{% blocks/section type="row" %}}
