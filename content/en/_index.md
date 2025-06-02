@@ -64,6 +64,18 @@ It is flat, absolutely flat. You never need to worry about a car's engine overhe
 The rain comes and goes. Dutch people use the 'buienradar' (the rain radar) app to check whether it will rain and plan their commute accordingly.
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fa fa-train" title="5. The weather is too hot so the trains are not running" %}}
+The weather is too hot (40°C) so the trains are not running.
+
+---
+
+_Did you know_:
+{.text-light}
+
+Chinese high speed trains run all year around from -20°C to 40°C, and they are designed to run in extreme weather conditions.
+{.text-light}
+{{% /blocks/feature %}}
+
 {{% /blocks/section %}}
 
 <!-- Section 2, suite 社会运行 -->
@@ -71,18 +83,6 @@ The rain comes and goes. Dutch people use the 'buienradar' (the rain radar) app 
 
 {{% blocks/feature icon="fa fa-store" title="3 - Shops are 9-5, too" %}}
 After you finish a day of work, you will find that all the shops are closed. You can only go to the supermarket, which might be open till 10 PM.
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa fa-train" title="5. The weather is too hot so the trains are not running" %}}
-The weather is too hot (40°C) so the trains are not running.
-
----
-
-_Did you know_:
-{.text-muted}
-
-Chinese high speed trains run all year around from -20°C to 40°C, and they are designed to run in extreme weather conditions.
-{.text-muted}
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-pills" title="7 - Paracetamol heals everything" %}}
