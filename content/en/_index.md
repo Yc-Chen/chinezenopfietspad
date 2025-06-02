@@ -69,7 +69,11 @@ The rain comes and goes. Dutch people use the 'buienradar' (the rain radar) app 
 <!-- Section 2, suite 社会运行 -->
 {{% blocks/section type="row" %}}
 
-{{% blocks/feature icon="fa fa-train" title="4. The weather is too hot so the trains are not running" %}}
+{{% blocks/feature icon="fa fa-store" title="3 - Shops are 9-5, too" %}}
+After you finish a day of work, you will find that all the shops are closed. You can only go to the supermarket, which might be open till 10 PM.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa fa-train" title="5. The weather is too hot so the trains are not running" %}}
 The weather is too hot (40°C) so the trains are not running.
 
 ---
@@ -81,13 +85,13 @@ Chinese high speed trains run all year around from -20°C to 40°C, and they are
 {.text-muted}
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa fa-pills" title="5 - Paracetamol heals everything" %}}
+{{% blocks/feature icon="fa fa-pills" title="7 - Paracetamol heals everything" %}}
 When you visit GP, they will often suggest you to take paracetamol with hot water, and you will be fine.
 Also, often times before your appointment with GP in 2 weeks, you already recovered yourself.
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fa fa-pills" title="6 - You recover yourself" %}}
+{{% blocks/feature icon="fa fa-pills" title="8 - You recover yourself" %}}
 If you feel unwell and you like to see your GP, you will have to wait for more than 2 weeks for an appointment. By the time of your appointment, you will often be fine already.
 
 ---
