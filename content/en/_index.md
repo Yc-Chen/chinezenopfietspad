@@ -54,7 +54,7 @@ text-muted
 
 <!-- Section 1, suite 衣 -->
 {{% blocks/section color="dark" type="row" %}}
-Jokes about The Netherlands, 分为衣食住行四色
+Jokes about The Netherlands, 四个花色分别为，关于人，关于社会运行，关于吃穿购物，
 {{% /blocks/section %}}
 
 <!-- Section 2, suite 食 -->
@@ -66,13 +66,18 @@ Suite: 衣食住行 - 食
 When you visit GP, they will often suggest you to take paracetamol with hot water, and you will be fine.
 Also, often times before your appointment with GP in 2 weeks, you already recovered yourself.
 
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa fa-pills" title="2 - You recover yourself" %}}
+If you feel unwell and you like to see your GP, you will have to wait for more than 2 weeks for an appointment. By the time of your appointment, you will often be fine already.
+
 ---
 
 _Did you know_:
-{.text-success}
+{.text-muted}
 
 In China a doctor will see 50 - 100 patients a day, which is about 5 - 10 minutes per patient. Doctors in China have rich clinical practice experience, and they can quickly diagnose your problem and give you a prescription.
-{.text-success}
+{.text-muted}
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-hotdog" title="3 - Frying is the most popular cooking method"%}}
@@ -86,7 +91,7 @@ Fish...fried, bitterballen(meat mixture)...fried, kroket(meat mixture)...fried, 
 
 {{% /blocks/section %}}
 
-<!-- Section 4, 行 -->
+<!-- Section 4, 关于人 -->
 {{% blocks/section type="row" %}}
 
 {{% blocks/feature icon="fa fa-train" title="A. The weather is too hot so the trains are not running" %}}
@@ -101,10 +106,12 @@ Chinese high speed trains run all year around from -20°C to 40°C, and they are
 {.text-light}
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa fa-bullhorn" title="4 - People talk loud in public spaces" %}}
-People talk really loud in public spaces like libraries, as if no one else exists.
+{{% blocks/feature icon="fa fa-bullhorn" title="4 - People are loud in public spaces" %}}
+People talk loud in public spaces like libraries, as if no one else exists.
 {{% /blocks/feature %}}
 
-
+{{% blocks/feature icon="fa fa-calendar" title="5 - People fill up their agenda half an year in advance" %}}
+While you are still thinking about what to do next week, your Dutch friends have already filled up their agenda for the next 6 months.
+{{% /blocks/feature %}}
 
 {{% /blocks/section %}}
