@@ -113,6 +113,10 @@ Fish...fried, bitterballen(meat mixture)...fried, kroket(meat mixture)...fried, 
 People talk loud in public spaces like libraries, as if no one else exists.
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fa fa-people-group" title="4 - Dutch parties" %}}
+In Dutch parties, people simply sit in a circle and talk, and that's it. No music, no food (well snacks), no games, and no activities.
+{{% /blocks/feature %}}
+
 {{% blocks/feature icon="fa fa-calendar" title="5 - People fill up their agenda half an year in advance" %}}
 While you are still thinking about what to do next week, your Dutch friends have already filled up their agenda for the next 6 months.
 {{% /blocks/feature %}}
