@@ -25,9 +25,6 @@ title: Chinese op Fietspad
 -- This website means no offense to anyone,
 but aims to bring more awareness for the systemic discrimination against Chinese and other Asian people in The Netherlands and beyond.
 
-<!-- TODO: brainstorm examples
-title: (Culture) shocks Chinese encounter in The Netherlands.
-
 text-primary
 {.text-primary}
 
@@ -50,72 +47,64 @@ text-dark
 {.text-dark}
 
 text-muted
-{.text-muted} -->
+{.text-muted}
 
 
 {{% /blocks/lead %}}
 
-<!-- Section 1 -->
-{{% blocks/section color="dark" %}}
-Jokes about The Netherlands
-{.h1 .text-center .mb-4}
+<!-- Section 1, suite 衣 -->
+{{% blocks/section color="dark" type="row" %}}
+Jokes about The Netherlands, 分为衣食住行四色
+{{% /blocks/section %}}
 
-<i class="fa fa-pills"></i> 1. Paracetamol heals everything!
-{.h3 .text-center}
+<!-- Section 2, suite 食 -->
+{{% blocks/section type="row" %}}
 
+Suite: 衣食住行 - 食
+
+{{% blocks/feature icon="fa fa-pills" title="A - Paracetamol heals everything" %}}
 When you visit GP, they will often suggest you to take paracetamol with hot water, and you will be fine.
 Also, often times before your appointment with GP in 2 weeks, you already recovered yourself.
 
 ---
 
 _Did you know_:
-{.text-light}
+{.text-success}
 
 In China a doctor will see 50 - 100 patients a day, which is about 5 - 10 minutes per patient. Doctors in China have rich clinical practice experience, and they can quickly diagnose your problem and give you a prescription.
-{.text-light}
+{.text-success}
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa fa-hotdog" title="3 - Frying is the most popular cooking method"%}}
+Fish...fried, bitterballen(meat mixture)...fried, kroket(meat mixture)...fried, frikandel(meat mixture)...fried, patat(potato)...fried, and so on.
+{{% /blocks/feature %}}
 
 {{% /blocks/section %}}
 
-<!-- Section 2, light blue -->
+<!-- Section 3, 住 -->
 {{% blocks/section %}}
 
-<i class="fa fa-train"></i> 2. The weather is too hot so the trains are not running!
-{.h3 .text-center}
+{{% /blocks/section %}}
+
+<!-- Section 4, 行 -->
+{{% blocks/section type="row" %}}
+
+{{% blocks/feature icon="fa fa-train" title="A. The weather is too hot so the trains are not running" %}}
 The weather is too hot (40°C) so the trains are not running.
 
 ---
 
 _Did you know_:
-{.text-success}
+{.text-light}
 
 Chinese high speed trains run all year around from -20°C to 40°C, and they are designed to run in extreme weather conditions.
-{.text-success}
+{.text-light}
+{{% /blocks/feature %}}
 
-{{% /blocks/section %}}
+{{% blocks/feature icon="fa fa-bullhorn" title="4 - People talk loud in public spaces" %}}
+People talk really loud in public spaces like libraries, as if no one else exists.
+{{% /blocks/feature %}}
 
-<!-- Section 3, white -->
-{{% blocks/section %}}
-<i class="fa fa-hotdog"></i> 3. The only way to make something tasty is to fry it.
-{.h3 .text-center}
-Fish...fried, bitterballen(meat mixture)...fried, kroket(meat mixture)...fried, frikandel(meat mixture)...fried, patat(potato)...fried, and so on.
 
----
-{{% /blocks/section %}}
-
-<!-- Section 4, gray -->
-{{% blocks/section %}}
-<i class="fa fa-bullhorn"></i> 4. People talk really loud in public spaces like libraries, as if no one else exists.
-{.h3 .text-center}
-
----
-{{% /blocks/section %}}
-
-<!-- Section 5, blue -->
-{{% blocks/section %}}
-<i class="fa fa-pills"></i> 5. Paracetamol heals everything!
-{.h3 .text-center}
-
-When you visit GP, they will often suggest you to take paracetamol with hot water, and you will be fine.
-Also, often times before your appointment with GP in 2 weeks, you already recovered yourself.
 
 {{% /blocks/section %}}
