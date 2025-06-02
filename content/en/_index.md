@@ -98,7 +98,11 @@ In China a doctor will see 50 - 100 patients a day, which is about 5 - 10 minute
 {{% /blocks/section %}}
 
 <!-- Section 3, 吃穿购物 -->
-{{% blocks/section %}}
+{{% blocks/section type="row" %}}
+
+{{% blocks/feature icon="fa fa-bowl-food" title="2 - Nasi and bami are not Chinese."%}}
+Dutch people know only two Chinese dishes: nasi and bami, which are actually Indonesian dishes.
+{{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-hotdog" title="3 - Frying is the most popular cooking method"%}}
 Fish...fried, bitterballen(meat mixture)...fried, kroket(meat mixture)...fried, frikandel(meat mixture)...fried, patat(potato)...fried, and so on.
