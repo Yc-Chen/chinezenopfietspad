@@ -103,6 +103,10 @@ In China a doctor will see 50 - 100 patients a day, which is about 5 - 10 minute
 {.text-muted}
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fa fa-shopping-cart" title="10 - Shipping is not for free for online shopping" %}}
+TODO
+{{% /blocks/feature %}}
+
 {{% /blocks/section %}}
 
 <!-- Section 3, 吃穿购物 -->
