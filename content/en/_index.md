@@ -100,7 +100,7 @@ In China a doctor will see 50 - 100 patients a day, which is about 5 - 10 minute
 <!-- Section 3, 吃穿购物 -->
 {{% blocks/section type="row" %}}
 
-{{% blocks/feature icon="fa fa-bowl-food" title="2 - Nasi and bami are not Chinese."%}}
+{{% blocks/feature icon="fa fa-bowl-food" title="A - Nasi and bami are not Chinese."%}}
 Dutch people know only two Chinese dishes: nasi and bami, which are actually Indonesian dishes.
 {{% /blocks/feature %}}
 
@@ -108,8 +108,8 @@ Dutch people know only two Chinese dishes: nasi and bami, which are actually Ind
 Fish...fried, bitterballen(meat mixture)...fried, kroket(meat mixture)...fried, frikandel(meat mixture)...fried, patat(potato)...fried, and so on.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa fa-meh" title="7 - World fusion improvisation"%}}
-TODO
+{{% blocks/feature icon="fa fa-face-grin-beam" title="4 - \"Does everything taste well?\""%}}
+At restaurants, soon after you get your food, the waiter will come to you and ask: "Heeft alles gesmaakt?" (Does everything taste well?). You are supposed to smile back and say "Ja, lekker!" (Yes, delicious!), unless you are absolutely pissed off by the food.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
