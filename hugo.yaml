@@ -50,14 +50,14 @@ languages:
     params:
       description: A Docsy example site
   # cSpell:disable
-  'no':
-    languageName: Norsk
-    contentDir: content/no
-    title: Gulldoks
-    params:
-      description: Docsy er operativsystem for skyen
-      time_format_default: 02.01.2006
-      time_format_blog: 02.01.2006
+  # 'no':
+  #   languageName: Norsk
+  #   contentDir: content/no
+  #   title: Gulldoks
+  #   params:
+  #     description: Docsy er operativsystem for skyen
+  #     time_format_default: 02.01.2006
+  #     time_format_blog: 02.01.2006
   # fa:
   #   languageDirection: rtl
   #   languageName: "فارسی (Persian)"
@@ -136,7 +136,7 @@ params:
   github_branch: main
 
   # Google Custom Search Engine ID. Remove or comment out to disable search.
-  gcs_engine_id: d72aa9b2712488cc3
+  # gcs_engine_id: d72aa9b2712488cc3
 
   # Enable Lunr.js offline search
   offlineSearch: false

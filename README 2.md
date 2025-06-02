@@ -38,7 +38,7 @@ git clone --depth 1 https://github.com/me/example.git
 ```
 
 Depending on your environment you may need to adjust the top-level `module` settings in your project's Hugo config file, for example, by adding a proxy to use when downloading remote modules.
-You can find details of what these configuration settings do in the [Hugo modules documentation](https://gohugo.io/hugo-modules/configuration/#module-config-top-level). 
+You can find details of what these configuration settings do in the [Hugo modules documentation](https://gohugo.io/hugo-modules/configuration/#module-config-top-level).
 
 Once your settings are adjusted, you can edit your own versions of the site’s source files.
 
