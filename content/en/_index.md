@@ -52,23 +52,38 @@ text-muted
 
 {{% /blocks/lead %}}
 
-<!-- Section 1, suite 衣 -->
+<!-- Section 1, suite 物理条件 -->
 {{% blocks/section color="dark" type="row" %}}
-Jokes about The Netherlands, 四个花色分别为，关于人，关于社会运行，关于吃穿购物，
-{{% /blocks/section %}}
+Jokes about The Netherlands, 四个花色分别为，关于客观物理条件，关于社会运行，关于吃穿购物，关于人.
 
-<!-- Section 2, suite 食 -->
-{{% blocks/section type="row" %}}
-
-Suite: 衣食住行 - 食
-
-{{% blocks/feature icon="fa fa-pills" title="A - Paracetamol heals everything" %}}
-When you visit GP, they will often suggest you to take paracetamol with hot water, and you will be fine.
-Also, often times before your appointment with GP in 2 weeks, you already recovered yourself.
-
+{{% blocks/feature icon="fa fa-cloud-rain" title="2 - It can rain in the next minute" %}}
+Dutch people use the buienradar app to check whether it will rain and plan their commute accordingly.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa fa-pills" title="2 - You recover yourself" %}}
+{{% /blocks/section %}}
+
+<!-- Section 2, suite 社会运行 -->
+{{% blocks/section type="row" %}}
+
+{{% blocks/feature icon="fa fa-train" title="4. The weather is too hot so the trains are not running" %}}
+The weather is too hot (40°C) so the trains are not running.
+
+---
+
+_Did you know_:
+{.text-muted}
+
+Chinese high speed trains run all year around from -20°C to 40°C, and they are designed to run in extreme weather conditions.
+{.text-muted}
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa fa-pills" title="5 - Paracetamol heals everything" %}}
+When you visit GP, they will often suggest you to take paracetamol with hot water, and you will be fine.
+Also, often times before your appointment with GP in 2 weeks, you already recovered yourself.
+{{% /blocks/feature %}}
+
+
+{{% blocks/feature icon="fa fa-pills" title="6 - You recover yourself" %}}
 If you feel unwell and you like to see your GP, you will have to wait for more than 2 weeks for an appointment. By the time of your appointment, you will often be fine already.
 
 ---
@@ -80,33 +95,21 @@ In China a doctor will see 50 - 100 patients a day, which is about 5 - 10 minute
 {.text-muted}
 {{% /blocks/feature %}}
 
+{{% /blocks/section %}}
+
+<!-- Section 3, 吃穿购物 -->
+{{% blocks/section %}}
+
 {{% blocks/feature icon="fa fa-hotdog" title="3 - Frying is the most popular cooking method"%}}
 Fish...fried, bitterballen(meat mixture)...fried, kroket(meat mixture)...fried, frikandel(meat mixture)...fried, patat(potato)...fried, and so on.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
 
-<!-- Section 3, 住 -->
-{{% blocks/section %}}
-
-{{% /blocks/section %}}
-
 <!-- Section 4, 关于人 -->
 {{% blocks/section type="row" %}}
 
-{{% blocks/feature icon="fa fa-train" title="A. The weather is too hot so the trains are not running" %}}
-The weather is too hot (40°C) so the trains are not running.
-
----
-
-_Did you know_:
-{.text-light}
-
-Chinese high speed trains run all year around from -20°C to 40°C, and they are designed to run in extreme weather conditions.
-{.text-light}
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa fa-bullhorn" title="4 - People are loud in public spaces" %}}
+{{% blocks/feature icon="fa fa-bullhorn" title="A - People are loud in public spaces" %}}
 People talk loud in public spaces like libraries, as if no one else exists.
 {{% /blocks/feature %}}
 
