@@ -54,10 +54,10 @@ text-muted
 
 <!-- Section 1, suite 物理条件 -->
 {{% blocks/section color="dark" type="row" %}}
-Jokes about The Netherlands, 四个花色分别为，关于客观物理条件，关于社会运行，关于吃穿购物，关于人.
+Jokes about The Netherlands, 四个花色分别为，关于客观地理条件，关于物质条件，关于吃穿购物，关于人.
 
 {{% blocks/feature icon="fa fa-cloud-rain" title="2 - It can rain in the next minute" %}}
-Dutch people use the buienradar app to check whether it will rain and plan their commute accordingly.
+The rain comes and goes. Dutch people use the 'buienradar' (the rain radar) app to check whether it will rain and plan their commute accordingly.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
@@ -115,6 +115,10 @@ People talk loud in public spaces like libraries, as if no one else exists.
 
 {{% blocks/feature icon="fa fa-calendar" title="5 - People fill up their agenda half an year in advance" %}}
 While you are still thinking about what to do next week, your Dutch friends have already filled up their agenda for the next 6 months.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa fa-umbrella-beach" title="6 - People can go to Efteling as a holiday" %}}
+Eftling is a famous theme park in The Netherlands, and it is a popular holiday destination for Dutch people. But it is unthinkable for Chinese people to go to a park nearby as a holiday, because there are so many places to visit in the world.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
