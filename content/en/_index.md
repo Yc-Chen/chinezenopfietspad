@@ -72,6 +72,10 @@ Toilet is not for free in The Netherlands. Plan your trip accordingly, or you wi
 The rain comes and goes. Dutch people use the 'buienradar' (the rain radar) app to check whether it will rain and plan their commute accordingly.
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fa fa-mug-hot" title="4 - Hot water is not a thing" %}}
+If you like to have some hot water in a restaurant, you will have to order a cup of tea, which usually comes with a tea bag and a cookie or chocolate, even if you just want hot water.
+{{% /blocks/feature %}}
+
 {{% blocks/feature icon="fa fa-train" title="5 -  The weather is too hot so the trains are not running" %}}
 The weather is too hot (40°C) so the trains are not running.
 
@@ -180,7 +184,7 @@ Dutch people mock Limburgers for their dialect as if it is a different language.
 To Chinese ears, the difference is smaller than Beijing dialect and Northern dialects.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa fa-female" title="5 - 'NiHao'" %}}
+{{% blocks/feature icon="fa fa-female" title="7 - 'NiHao'" %}}
 On a busy district or in the evenings, Chinese women traveling alone will often hear cat calling 'NiHao' to them as a harassment.
 {{% /blocks/feature %}}
 
