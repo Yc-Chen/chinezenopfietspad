@@ -136,6 +136,10 @@ Dutch people know only two Chinese dishes: nasi and bami, which are actually Ind
 Fish...fried, bitterballen(meat mixture)...fried, kroket(meat mixture)...fried, frikandel(meat mixture)...fried, patat(potato)...fried, and so on.
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fa fa-beer" title="4 - Food is expensive but beer is okay"%}}
+Dutch people complain about the high food prices, but they never complain about the beer prices.
+{{% /blocks/feature %}}
+
 {{% blocks/feature icon="fa fa-face-grin-beam" title="6 - \"Does everything taste well?\""%}}
 At restaurants, soon after you get your food, the waiter will come to you and ask: "Heeft alles gesmaakt?" (Does everything taste well?). You are supposed to smile back and say "Ja, lekker!" (Yes, delicious!), unless you are absolutely pissed off by the food.
 {{% /blocks/feature %}}
