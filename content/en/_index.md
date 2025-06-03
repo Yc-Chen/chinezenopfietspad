@@ -154,7 +154,7 @@ At restaurants, soon after you get your food, the waiter will come to you and as
 {{% blocks/section type="row" %}}
 
 {{% blocks/feature icon="fa fa-bicycle" title="A - Bicycle road rage " %}}
-Dutch people get aggressive when they are on a bicycle, especially when they are on a bicycle road. You will hear if you are not cycling fast enough, or if you are not supposed to be there.
+Dutch people get aggressive when they are on a bicycle, even on the wrong direction. You will hear if you are not cycling fast enough, or if you are not supposed to be there.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-bullhorn" title="1 - People are loud in public spaces" %}}
@@ -178,6 +178,10 @@ While you are still thinking about what to do next week, your Dutch friends have
 {{% blocks/feature icon="fa fa-language" title="6 - Limburges is a different language" %}}
 Dutch people mock Limburgers for their dialect as if it is a different language.
 To Chinese ears, the difference is smaller than Beijing dialect and Northern dialects.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa fa-face-grin-stars" title="5 - 'NiHao'" %}}
+While you are still thinking about what to do next week, your Dutch friends have already filled up their agenda for the next 6 months.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-umbrella-beach" title="8 - Theme park can be a holiday destination" %}}
