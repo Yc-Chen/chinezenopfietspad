@@ -60,6 +60,10 @@ Jokes about The Netherlands, 四个花色分别为，关于客观地理条件，
 It is flat, absolutely flat. You never need to worry about a car's engine overheating when driving uphill, because there is no uphill.
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fa fa-wine-bottle" title="1 - Plastic bottle caps are attached" %}}
+Thanks to the EU regulations, plastic bottle caps are attached to the bottles, so that you cannot throw them away separately.
+{{% /blocks/feature %}}
+
 {{% blocks/feature icon="fa fa-toilet" title="2 - Toilet is not for free" %}}
 Toilet is not for free in The Netherlands. Plan your trip accordingly, or you will have to find a bush to hide yourself.
 {{% /blocks/feature %}}
