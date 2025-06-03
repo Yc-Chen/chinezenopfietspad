@@ -188,4 +188,8 @@ On a busy district or in the evenings, Chinese women traveling alone will often 
 Eftling is a famous theme park in The Netherlands, and a popular holiday destination for Dutch people too. But it is unthinkable for Chinese people that a theme park itself can be a holiday destination, because there are so many places to visit in the world.
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fa fa-caravan" title="9 - Holiday is holiday" %}}
+Dutch people will always plan and go on holidays, even if they are teenagers or students and not working yet.
+{{% /blocks/feature %}}
+
 {{% /blocks/section %}}
