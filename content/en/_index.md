@@ -64,7 +64,7 @@ It is flat, absolutely flat. You never need to worry about a car's engine overhe
 The rain comes and goes. Dutch people use the 'buienradar' (the rain radar) app to check whether it will rain and plan their commute accordingly.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa fa-train" title="5. The weather is too hot so the trains are not running" %}}
+{{% blocks/feature icon="fa fa-train" title="5 -  The weather is too hot so the trains are not running" %}}
 The weather is too hot (40°C) so the trains are not running.
 
 ---
@@ -141,6 +141,12 @@ At restaurants, soon after you get your food, the waiter will come to you and as
 People talk loud in public spaces like libraries, as if no one else exists.
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fa fa-bread-slice" title="2 - Lunches are the same as breakfast" %}}
+At lunch time, Dutch people take out their sandwiches wrapped in a small plastic bag -
+you can buy these bags in supermarkets, and they are called 'broodzakjes' (bread bags).
+That's it, for lunch.
+{{% /blocks/feature %}}
+
 {{% blocks/feature icon="fa fa-people-group" title="4 - Dutch parties" %}}
 In Dutch parties, people simply sit in a circle and talk, and that's it. No music, no food (well snacks), no games, and no activities.
 {{% /blocks/feature %}}
@@ -149,8 +155,8 @@ In Dutch parties, people simply sit in a circle and talk, and that's it. No musi
 While you are still thinking about what to do next week, your Dutch friends have already filled up their agenda for the next 6 months.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa fa-umbrella-beach" title="6 - People can go to Efteling as a holiday" %}}
-Eftling is a famous theme park in The Netherlands, and it is a popular holiday destination for Dutch people. But it is unthinkable for Chinese people to go to a park nearby as a holiday, because there are so many places to visit in the world.
+{{% blocks/feature icon="fa fa-umbrella-beach" title="8 - People can go to Efteling as a holiday" %}}
+Eftling is a famous theme park in The Netherlands, and a popular holiday destination for Dutch people too. But it is unthinkable for Chinese people that a theme park itself can be a holiday destination, because there are so many places to visit in the world.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
