@@ -180,8 +180,8 @@ Dutch people mock Limburgers for their dialect as if it is a different language.
 To Chinese ears, the difference is smaller than Beijing dialect and Northern dialects.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa fa-face-grin-stars" title="5 - 'NiHao'" %}}
-While you are still thinking about what to do next week, your Dutch friends have already filled up their agenda for the next 6 months.
+{{% blocks/feature icon="fa fa-female" title="5 - 'NiHao'" %}}
+On a busy district or in the evenings, Chinese women traveling alone will often hear cat calling 'NiHao' to them as a harassment.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-umbrella-beach" title="8 - Theme park can be a holiday destination" %}}
