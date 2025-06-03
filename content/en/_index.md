@@ -103,7 +103,7 @@ Also, often times before your appointment with GP in 2 weeks, you already recove
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fa fa-pills" title="8 - You recover yourself" %}}
+{{% blocks/feature icon="fa fa-head-side-cough" title="8 - You recover yourself" %}}
 If you feel unwell and you like to see your GP, you will have to wait for more than 2 weeks for an appointment. By the time of your appointment, you will often be fine already.
 
 ---
