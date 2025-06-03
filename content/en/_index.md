@@ -175,6 +175,11 @@ In Dutch parties, people simply sit in a circle and talk, and that's it. No musi
 While you are still thinking about what to do next week, your Dutch friends have already filled up their agenda for the next 6 months.
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fa fa-language" title="5 - Limburges is a different language" %}}
+Dutch people mock Limburgers for their dialect as if it is a different language.
+To Chinese ears, the difference is smaller than Beijing dialect and Northern dialects.
+{{% /blocks/feature %}}
+
 {{% blocks/feature icon="fa fa-umbrella-beach" title="8 - People can go to Efteling as a holiday" %}}
 Eftling is a famous theme park in The Netherlands, and a popular holiday destination for Dutch people too. But it is unthinkable for Chinese people that a theme park itself can be a holiday destination, because there are so many places to visit in the world.
 {{% /blocks/feature %}}
