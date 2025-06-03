@@ -111,7 +111,11 @@ TODO
 TODO
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa fa-house" title="Q - My house is leaking" %}}
+{{% blocks/feature icon="fa fa-house" title="Q - My house is leaking, again" %}}
+House leakage is a common problem in The Netherlands. You can call a technician to inspect and fix it. It usually takes multiple times to really fix it.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa fa-tools" title="K - House renovation takes half an year, just to plan" %}}
 TODO
 {{% /blocks/feature %}}
 
