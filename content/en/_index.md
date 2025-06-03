@@ -149,7 +149,11 @@ At restaurants, soon after you get your food, the waiter will come to you and as
 <!-- Section 4, 关于人 -->
 {{% blocks/section type="row" %}}
 
-{{% blocks/feature icon="fa fa-bullhorn" title="A - People are loud in public spaces" %}}
+{{% blocks/feature icon="fa fa-bicycle" title="A - Bicycle road rage " %}}
+Dutch people get aggressive when they are on a bicycle, especially when they are on a bicycle road. You will hear if you are not cycling fast enough, or if you are not supposed to be there.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa fa-bullhorn" title="1 - People are loud in public spaces" %}}
 People talk loud in public spaces like libraries, as if no one else exists.
 {{% /blocks/feature %}}
 
