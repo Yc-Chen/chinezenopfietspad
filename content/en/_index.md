@@ -73,7 +73,7 @@ The rain comes and goes. Dutch people use the 'buienradar' (the rain radar) app 
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-mug-hot" title="4 - Hot water is not a thing" %}}
-If you like to have some hot water in a restaurant, you will have to order a cup of tea, which usually comes with a tea bag and a cookie or chocolate, even if you just want hot water.
+If you like to have some hot water in a restaurant, you will have to order a cup of tea, which usually comes with a tea bag and a cookie or chocolate, even if you just want hot water and have to pay for the whole thing.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-train" title="5 -  The weather is too hot so the trains are not running" %}}
