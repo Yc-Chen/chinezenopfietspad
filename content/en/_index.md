@@ -127,7 +127,7 @@ TODO
 House leakage is a common problem in The Netherlands. You can call a technician to inspect and fix it. It usually takes multiple times to really fix it.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa fa-tools" title="K - House renovation takes half an year, just to plan" %}}
+{{% blocks/feature icon="fa fa-tools" title="K - House renovation takes half a year, just to plan" %}}
 TODO
 {{% /blocks/feature %}}
 
