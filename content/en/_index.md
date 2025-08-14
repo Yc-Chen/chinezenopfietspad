@@ -152,9 +152,13 @@ Dutch people complain about the high food prices, but they never complain about 
 At restaurants, soon after you get your food, the waiter will come to you and ask: "Heeft alles gesmaakt?" (Does everything taste well?). You are supposed to smile back and say "Ja, lekker!" (Yes, delicious!), unless you are absolutely pissed off by the food.
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fa fa-train" title="7 - \"Train strikes are planned as well\""%}}
+Train drivers have their schedule planned one year in advance. Then they might go on strike; even then it is announced a few weeks in advance.
+{{% /blocks/feature %}}
+
 {{% /blocks/section %}}
 
-<!-- Section 4, 关于人 -->
+<!-- Section 4, suite 关于人 -->
 {{% blocks/section type="row" %}}
 
 {{% blocks/feature icon="fa fa-bicycle" title="A - Bicycle road rage " %}}
@@ -189,11 +193,18 @@ On a busy district or in the evenings, Chinese women traveling alone will often 
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-umbrella-beach" title="8 - Theme park can be a holiday destination" %}}
-Eftling is a famous theme park in The Netherlands, and a popular holiday destination for Dutch people too. But it is unthinkable for Chinese people that a theme park itself can be a holiday destination, because there are so many places to visit in the world.
+Eftling is a famous theme park in The Netherlands, and a popular holiday destination for Dutch people too.
+But it is unthinkable for Chinese people that a theme park itself can be a holiday destination, because there are so many places to visit in the world.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa fa-caravan" title="9 - Holiday is holiday" %}}
 Dutch people will always plan and go on holidays, even if they are teenagers or students and not working yet.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa fa-coffee" title="10 - Holiday is holiday" %}}
+Dutch people always finish their tea/coffee before they leave the table,
+to such an extent that they will 'pace' themselves to drink it slowly,
+so that they can finish it just before they leave.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
