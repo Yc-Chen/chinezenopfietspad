@@ -1,0 +1,7 @@
+{{/*
+  Docsy body-end hook. The game JS bails when #tiles-data is absent,
+  so it's safe to load on every page. Avoids partialCached quirks with
+  page-dependent guards.
+*/}}
+{{ $js := resources.Get "js/game.js" | js.Build (dict "minify" hugo.IsProduction) | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>

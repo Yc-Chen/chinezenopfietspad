@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="gb">
+  <header class="gb__header">
+    <p class="gb__edition">Editie 2026</p>
+    <h1 class="gb__title">Chinese op Fietspad</h1>
+    <p class="gb__subtitle">Een ganzenbord over Nederland. Gooi en zie waar je belandt.</p>
+  </header>
+
+  <div class="gb__board-wrap">
+    <ol class="gb__board" role="list" aria-label="Ganzenbord van 63 vakjes">
+      {{ $tiles := .Site.Data.tiles.v1 }}
+      {{ range seq 1 63 }}
+        {{ $n := printf "%d" . }}
+        {{ $tile := index $tiles $n }}
+        {{ partial "game/tile.html" (dict "number" . "tile" $tile) }}
+      {{ end }}
+    </ol>
+  </div>
+
+  {{ partial "game/dice.html" . }}
+
+  <section id="tile-content" class="gb__content" aria-live="polite">
+    <p class="gb__hint">Gooi de dobbelstenen om te beginnen, of klik op een vakje.</p>
+  </section>
+</div>
+
+{{ partial "game/end-overlay.html" . }}
+
+<script id="tiles-data" type="application/json">{{ .Site.Data.tiles.v1 | jsonify | safeJS }}</script>
+{{ end }}

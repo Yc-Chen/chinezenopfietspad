@@ -1,4 +1,6 @@
-baseURL: https://example.docsy.dev
+# When a custom domain is purchased, swap this to the canonical domain (trailing slash required)
+# and add static/CNAME + configure DNS per GitHub Pages docs.
+baseURL: https://yc-chen.github.io/chineseopfietspad/
 title: Chinese op Fietspad
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
@@ -123,10 +125,10 @@ params:
   url_latest_version: https://example.com
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  github_repo: https://github.com/google/docsy-example
+  github_repo: https://github.com/Yc-Chen/chineseopfietspad
 
-  # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-  github_project_repo: https://github.com/google/docsy
+  # An optional link to a related project repo. Leave unset — we don't have a sibling repo.
+  # github_project_repo:
 
   # Specify a value here if your content directory is not in your repo's root directory
   # github_subdir: ""
@@ -197,9 +199,9 @@ params:
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
       - name: GitHub
-        url: https://github.com/google/docsy
+        url: https://github.com/Yc-Chen/chineseopfietspad
         icon: fab fa-github
-        desc: Development takes place here!
+        desc: Contribute a tile or an expansion
       # - name: Slack
       #   url: https://example.org/slack
       #   icon: fab fa-slack

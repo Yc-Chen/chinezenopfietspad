@@ -1,0 +1,271 @@
+# Editie 2026 — tile data
+#
+# Edit this file to fill in themed tiles. Tile shape:
+#
+#   "N":
+#     status: filled           # empty | filled | reserved | hazard
+#     suit: material           # geography | material | food | people
+#     title: Short title
+#     body: |
+#       Longer observation body. Markdown supported.
+#     did_you_know: |
+#       Optional "Did you know" counter-fact.
+#     icon: fa fa-mug-hot      # optional FontAwesome class
+#
+# Tile 39 is reserved for the counter-punch to the Amsterdam 750 book —
+# do not fill it casually.
+
+"1":
+  status: empty
+
+"2":
+  status: empty
+
+"3":
+  status: empty
+
+"4":
+  status: empty
+
+"5":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: Gans! Ga door naar de volgende gans.
+
+"6":
+  status: hazard
+  hazard_type: bridge
+  title: De brug
+  body: Neem de brug en spring vooruit naar vakje 12.
+
+"7":
+  status: empty
+
+"8":
+  status: empty
+
+"9":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: Gans! Ga door naar de volgende gans.
+
+"10":
+  status: empty
+
+"11":
+  status: empty
+
+"12":
+  status: empty
+
+"13":
+  status: empty
+
+"14":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: Gans! Ga door naar de volgende gans.
+
+"15":
+  status: empty
+
+"16":
+  status: empty
+
+"17":
+  status: empty
+
+"18":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: Gans! Ga door naar de volgende gans.
+
+"19":
+  status: hazard
+  hazard_type: inn
+  title: De herberg
+  body: Pauze in de herberg. Sla één beurt over.
+
+"20":
+  status: empty
+
+"21":
+  status: empty
+
+"22":
+  status: empty
+
+"23":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: Gans! Ga door naar de volgende gans.
+
+"24":
+  status: empty
+
+"25":
+  status: empty
+
+"26":
+  status: empty
+
+"27":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: Gans! Ga door naar de volgende gans.
+
+"28":
+  status: empty
+
+"29":
+  status: empty
+
+"30":
+  status: empty
+
+"31":
+  status: hazard
+  hazard_type: well
+  title: De put
+  body: Je bent in de put. Wacht tot een ander speler je bevrijdt.
+
+"32":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: Gans! Ga door naar de volgende gans.
+
+"33":
+  status: empty
+
+"34":
+  status: empty
+
+"35":
+  status: empty
+
+"36":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: Gans! Ga door naar de volgende gans.
+
+"37":
+  status: empty
+
+"38":
+  status: empty
+
+"39":
+  status: reserved
+  suit: null
+  title: "Vakje 39"
+  body: |
+    // TBD — dit is het vakje waar het Amsterdam 750-boek kinderen naartoe stuurde
+    // om "Chinese toeristen te ontwijken". Hier komt de counter-punch.
+  did_you_know: null
+
+"40":
+  status: empty
+
+"41":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: Gans! Ga door naar de volgende gans.
+
+"42":
+  status: hazard
+  hazard_type: maze
+  title: Het doolhof
+  body: Verdwaald in het doolhof. Terug naar vakje 30.
+
+"43":
+  status: empty
+
+"44":
+  status: empty
+
+"45":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: Gans! Ga door naar de volgende gans.
+
+"46":
+  status: empty
+
+"47":
+  status: empty
+
+"48":
+  status: empty
+
+"49":
+  status: empty
+
+"50":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: Gans! Ga door naar de volgende gans.
+
+"51":
+  status: empty
+
+"52":
+  status: hazard
+  hazard_type: prison
+  title: De gevangenis
+  body: Achter de tralies. Wacht tot een ander speler je aflost.
+
+"53":
+  status: empty
+
+"54":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: Gans! Ga door naar de volgende gans.
+
+"55":
+  status: empty
+
+"56":
+  status: empty
+
+"57":
+  status: empty
+
+"58":
+  status: hazard
+  hazard_type: death
+  title: De dood
+  body: Dood. Begin opnieuw bij vakje 1.
+
+"59":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: Gans! Ga door naar de volgende gans.
+
+"60":
+  status: empty
+
+"61":
+  status: empty
+
+"62":
+  status: empty
+
+"63":
+  status: hazard
+  hazard_type: goal
+  title: Finish
+  body: Je hebt het bord gehaald. Klik op "Einde spel" om te zien waarom dit bestaat.

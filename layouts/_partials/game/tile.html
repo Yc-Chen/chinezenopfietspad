@@ -1,0 +1,25 @@
+{{/*
+  Single tile renderer.
+  Expects: dict "number" (int) "tile" (map from data/tiles/v1.yaml)
+*/}}
+{{ $n := .number }}
+{{ $t := .tile }}
+{{ $status := default "empty" $t.status }}
+{{ $suit := default "" $t.suit }}
+{{ $hazard := default "" $t.hazard_type }}
+{{ $classes := slice "tile" (printf "tile--%s" $status) }}
+{{ with $suit }}{{ $classes = $classes | append (printf "tile--suit-%s" .) }}{{ end }}
+{{ with $hazard }}{{ $classes = $classes | append (printf "tile--hazard-%s" .) }}{{ end }}
+{{ $label := printf "Vakje %d" $n }}
+{{ with $t.title }}{{ $label = printf "Vakje %d: %s" $n . }}{{ end }}
+<li class="gb__cell" data-tile="{{ $n }}">
+  <a id="tile-{{ $n }}"
+     href="#tile-{{ $n }}"
+     class="{{ delimit $classes " " }}"
+     data-tile="{{ $n }}"
+     aria-label="{{ $label }}">
+    <span class="tile__num">{{ $n }}</span>
+    {{ with $t.icon }}<span class="tile__icon" aria-hidden="true"><i class="{{ . }}"></i></span>{{ end }}
+    {{ if and $t.title (ne $status "empty") }}<span class="tile__title">{{ $t.title }}</span>{{ end }}
+  </a>
+</li>

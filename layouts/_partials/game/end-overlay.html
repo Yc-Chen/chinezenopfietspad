@@ -1,0 +1,29 @@
+{{/*
+  End-of-game overlay. Hidden by default; revealed by the "Einde spel" button.
+  This is the narrative payoff — the place where visitors learn why the game exists.
+  Copy is a placeholder; edit freely.
+*/}}
+<div id="gb-end-overlay" class="end-overlay" role="dialog" aria-modal="true" aria-labelledby="gb-end-title" hidden>
+  <div class="end-overlay__backdrop" data-close-overlay></div>
+  <div class="end-overlay__panel" tabindex="-1">
+    <button type="button" class="end-overlay__close" data-close-overlay aria-label="Sluiten">×</button>
+
+    <h2 id="gb-end-title">Waarom dit spel bestaat</h2>
+
+    <blockquote class="end-overlay__quote">
+      <p>"Chinese toeristen blokkeren het fietspad. Om ze te ontwijken ga je terug naar vakje 39."</p>
+      <cite>— <a href="https://pavlovpubliceert.nl/voor/kinderen/amsterdam/">Amsterdam 750 jaar</a>, een boek voor 60.000 basisschoolleerlingen.</cite>
+    </blockquote>
+
+    <p>
+      {{/* TODO: fill in the "why this exists" copy. See PLAN.md editorial principles.
+           Keep it short, playful, and not bitter. */}}
+      Dit is een placeholder. Vervang deze tekst in
+      <code>layouts/partials/game/end-overlay.html</code>.
+    </p>
+
+    <p class="end-overlay__cta">
+      <a href="https://github.com/Yc-Chen/chineseopfietspad" class="btn btn-primary">Draag een vakje bij</a>
+    </p>
+  </div>
+</div>
