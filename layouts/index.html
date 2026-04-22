@@ -9,21 +9,25 @@
     <p class="gb__subtitle">{{ i18n "game_subtitle" }}</p>
   </header>
 
-  <div class="gb__board-wrap">
-    <ol class="gb__board" role="list" aria-label="{{ i18n "board_label" }}">
-      {{ range seq 1 63 }}
-        {{ $n := printf "%d" . }}
-        {{ $tile := index $tiles $n }}
-        {{ partial "game/tile.html" (dict "number" . "tile" $tile "lang" $lang) }}
-      {{ end }}
-    </ol>
+  <div class="gb__layout">
+    <div class="gb__board-wrap">
+      <ol class="gb__board" role="list" aria-label="{{ i18n "board_label" }}">
+        {{ range seq 1 63 }}
+          {{ $n := printf "%d" . }}
+          {{ $tile := index $tiles $n }}
+          {{ partial "game/tile.html" (dict "number" . "tile" $tile "lang" $lang) }}
+        {{ end }}
+      </ol>
+    </div>
+
+    <aside class="gb__sidebar">
+      {{ partial "game/dice.html" . }}
+      {{ partial "game/legend.html" . }}
+      <section id="tile-content" class="gb__panel gb__content" aria-live="polite">
+        <p class="gb__hint">{{ i18n "hint_start" }}</p>
+      </section>
+    </aside>
   </div>
-
-  {{ partial "game/dice.html" . }}
-
-  <section id="tile-content" class="gb__content" aria-live="polite">
-    <p class="gb__hint">{{ i18n "hint_start" }}</p>
-  </section>
 </div>
 
 {{ partial "game/end-overlay.html" . }}

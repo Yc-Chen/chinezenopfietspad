@@ -36,3 +36,23 @@ overlay_body:
   other: "As a Chinese, I feel so special to be the only nationality addressed in this book, so I decided to create a game-punch-back for it. This game means no offense to anyone, but aims to bring more awareness for the systemic discrimination against Chinese and other Asian people in The Netherlands and beyond."
 overlay_cta:
   other: "Contribute a tile"
+dice_title:
+  other: "Dice"
+legend_title:
+  other: "Tile types"
+legend_goose:
+  other: "Goose — move forward"
+legend_bridge:
+  other: "Bridge — jump ahead"
+legend_inn:
+  other: "Inn — skip a turn"
+legend_well:
+  other: "Well — wait for rescue"
+legend_maze:
+  other: "Maze — go back"
+legend_prison:
+  other: "Prison — wait for rescue"
+legend_death:
+  other: "Death — start over"
+legend_goal:
+  other: "Finish!"

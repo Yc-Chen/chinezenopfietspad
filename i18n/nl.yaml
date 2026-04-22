@@ -36,3 +36,23 @@ overlay_body:
   other: "Als Chinees voel ik me zo bijzonder dat ik de enige nationaliteit ben die in dit boek wordt aangesproken, dus besloot ik een spel-terug-klap te maken. Dit spel is niet bedoeld om iemand te beledigen, maar wil meer bewustzijn creëren over de systematische discriminatie tegen Chinese en andere Aziatische mensen in Nederland en daarbuiten."
 overlay_cta:
   other: "Draag een vakje bij"
+dice_title:
+  other: "Dobbelsteen"
+legend_title:
+  other: "Tegeltypes"
+legend_goose:
+  other: "Gans — ga vooruit"
+legend_bridge:
+  other: "Brug — spring vooruit"
+legend_inn:
+  other: "Herberg — sla een beurt over"
+legend_well:
+  other: "Put — wacht op redding"
+legend_maze:
+  other: "Doolhof — ga terug"
+legend_prison:
+  other: "Gevangenis — wacht op aflossing"
+legend_death:
+  other: "Dood — begin opnieuw"
+legend_goal:
+  other: "Finish!"
