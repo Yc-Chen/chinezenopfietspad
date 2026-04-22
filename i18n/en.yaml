@@ -33,6 +33,6 @@ overlay_original:
 overlay_original_quote:
   other: "\"Chinese toeristen blokkeren het fietspad. Om ze te ontwijken ga je terug naar vakje 39.\""
 overlay_body:
-  other: "This is a placeholder. Replace this text in <code>layouts/_partials/game/end-overlay.html</code>."
+  other: "As a Chinese, I feel so special to be the only nationality addressed in this book, so I decided to create a game-punch-back for it. This game means no offense to anyone, but aims to bring more awareness for the systemic discrimination against Chinese and other Asian people in The Netherlands and beyond."
 overlay_cta:
   other: "Contribute a tile"
