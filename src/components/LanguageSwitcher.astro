@@ -1,0 +1,26 @@
+---
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import type { Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const links: Array<{ code: Lang; label: string }> = [
+  { code: 'en', label: 'EN' },
+  { code: 'nl', label: 'NL' },
+];
+---
+<nav class="lang-switch" aria-label="Language">
+  {links.map((l) => (
+    <a
+      href={getRelativeLocaleUrl(l.code, '')}
+      class:list={['lang-switch__link', { 'is-active': lang === l.code }]}
+      lang={l.code}
+      aria-current={lang === l.code ? 'page' : undefined}
+    >
+      {l.label}
+    </a>
+  ))}
+</nav>

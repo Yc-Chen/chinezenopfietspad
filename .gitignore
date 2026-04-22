@@ -1,9 +1,13 @@
 # Created by https://www.toptal.com/developers/gitignore/api/hugo,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=hugo,node
 
+### Astro ###
+/dist/
+/.astro/
+
 ### Hugo ###
 # Generated files by hugo
-/public/
+# Note: public/ is now Astro's static assets dir (tracked). Hugo output moved to dist/.
 /resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
