@@ -25,7 +25,11 @@
   status: empty
 
 "4":
-  status: empty
+  status: filled
+  # suit: geography
+  title: There is no mountain
+  body: It is flat, absolutely flat. You never need to worry about a car's engine overheating when driving uphill, because there is no uphill.
+  icon: fa fa-mountain
 
 "5":
   status: hazard
@@ -58,7 +62,11 @@
   status: empty
 
 "12":
-  status: empty
+  status: filled
+  suit: environment
+  title: It can rain in the next minute
+  body: The rain comes and goes. Dutch people use the 'buienradar' (the rain radar) app to check whether it will rain and plan their commute accordingly.
+  icon: fa fa-cloud-rain
 
 "13":
   status: empty
@@ -73,7 +81,10 @@
   status: empty
 
 "16":
-  status: empty
+  status: filled
+  title: Hot water is not a thing
+  body: If you like to have some hot water in a restaurant, you will have to order a cup of tea, which usually comes with a tea bag and a cookie or chocolate, even if you just want hot water and have to pay for the whole thing.
+  icon: fa fa-mug-hot
 
 "17":
   status: empty
@@ -94,10 +105,19 @@
   status: empty
 
 "21":
-  status: empty
+  status: filled
+  title: Lunches no lunch
+  body: |
+    At lunch time, Dutch people take out their sandwiches wrapped in a small plastic bag -
+    you can buy these bags in supermarkets, and they are called 'broodzakjes' (bread bags).
+    That's it, for lunch.
+  icon: fa fa-bread-slice
 
 "22":
-  status: empty
+  status: filled
+  title: Dutch parties
+  body: In Dutch parties, people simply sit in a circle and talk, and that's it. No music, no food (well snacks), no games, and no activities.
+  icon: fa fa-people-group
 
 "23":
   status: hazard
@@ -112,7 +132,10 @@
   status: empty
 
 "26":
-  status: empty
+  status: filled
+  title: Bottle caps
+  body: Thanks to the EU regulations, plastic bottle caps are attached to the bottles, so that you cannot throw them away separately.
+  icon: fa fa-bottle-water
 
 "27":
   status: hazard
@@ -121,7 +144,10 @@
   body: Gans! Ga door naar de volgende gans.
 
 "28":
-  status: empty
+  status: filled
+  title: Shipping costs
+  body: If you order something small online, you will have to pay for the shipping costs, even if the item is cheap. There is no free shipping.
+  icon: fa fa-truck
 
 "29":
   status: empty
@@ -142,13 +168,19 @@
   body: Gans! Ga door naar de volgende gans.
 
 "33":
-  status: empty
+  status: filled
+  title: Shops are 9-5, too
+  body: Okay, 9-6 to be accurate. But after you finish a day of work, you will find that all the shops are closed. You can only go to the supermarket, which might be open till 10 PM.
+  icon: fa fa-store
 
 "34":
   status: empty
 
 "35":
-  status: empty
+  status: filled
+  title: Food is expensive but beer is okay
+  body: Dutch people complain about the high food prices, but they don't complain about the beer prices.
+  icon: fa fa-beer
 
 "36":
   status: hazard
@@ -160,19 +192,23 @@
   status: empty
 
 "38":
-  status: empty
+  status: filled
+  title: People fill up their agenda half an year in advance
+  body: While you are still thinking about what to do next week, your Dutch friends have already filled up their agenda for the next 6 months.
+  icon: fa fa-calendar
 
 "39":
   status: reserved
   suit: null
-  title: "Vakje 39"
-  body: |
-    // TBD — dit is het vakje waar het Amsterdam 750-boek kinderen naartoe stuurde
-    // om "Chinese toeristen te ontwijken". Hier komt de counter-punch.
+  title: "Vakje 39 | Bicycle road rage"
+  body: Dutch people get aggressive when they are on a bicycle, even on the wrong direction. You will hear if you are not cycling fast enough, or if you are not supposed to be there.
   did_you_know: null
 
 "40":
-  status: empty
+  status: filled
+  title: Train strikes are planned as well
+  body: Train drivers have their schedule planned one year in advance. Then they might go on strike; even then it is announced a few weeks in advance.
+  icon: fa fa-train
 
 "41":
   status: hazard
@@ -181,10 +217,12 @@
   body: Gans! Ga door naar de volgende gans.
 
 "42":
-  status: hazard
-  hazard_type: maze
-  title: Het doolhof
-  body: Verdwaald in het doolhof. Terug naar vakje 30.
+  status: filled
+  title: Limburges is a different language
+  body: |
+    Dutch people mock Limburgers for their dialect as if it is a different language.
+    To Chinese ears, the difference is smaller than Beijing dialect and Northern dialects.
+  icon: fa fa-ear-listen
 
 "43":
   status: empty
@@ -205,7 +243,11 @@
   status: empty
 
 "48":
-  status: empty
+  status: filled
+  title: Nasi and bami are not Chinese
+  body: |
+    Dutch people know only two Chinese dishes: nasi and bami, which are actually Indonesian dishes.
+  icon: fa fa-bowl-food
 
 "49":
   status: empty
@@ -222,8 +264,12 @@
 "52":
   status: hazard
   hazard_type: prison
-  title: De gevangenis
-  body: Achter de tralies. Wacht tot een ander speler je aflost.
+  title: De gevangenis | trains
+  body: |
+    Achter de tralies.
+    The weather is too hot (40°C) so the trains are not running.
+    Wacht tot een ander speler je aflost.
+  did_you_know: Chinese high speed trains run all year around from -20°C to 40°C, and they are designed to run in extreme weather conditions.
 
 "53":
   status: empty
@@ -235,7 +281,10 @@
   body: Gans! Ga door naar de volgende gans.
 
 "55":
-  status: empty
+  status: filled
+  title: Frying is the most popular cooking method
+  body: Fish...fried, bitterballen(meat mixture)...fried, kroket(meat mixture)...fried, frikandel(meat mixture)...fried, patat(potato)...fried, and so on.
+  icon: fa fa-hotdog
 
 "56":
   status: empty
@@ -256,7 +305,14 @@
   body: Gans! Ga door naar de volgende gans.
 
 "60":
-  status: empty
+  status: hazard
+  hazard_type: maze
+  title: Het doolhof | Paracetamol heals everything
+  body: |
+    Verdwaald in het doolhof.
+    When you visit GP, they will often suggest you to take paracetamol with hot water, and you will be fine.
+    Also, often times before your appointment with GP in 2 weeks, you already recovered yourself.
+    Terug naar vakje 39.
 
 "61":
   status: empty
