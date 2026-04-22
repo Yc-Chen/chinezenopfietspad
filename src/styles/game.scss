@@ -373,6 +373,9 @@ a { color: inherit; }
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.55);
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 .end-overlay__panel {

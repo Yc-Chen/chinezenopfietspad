@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Board from '../components/Board.astro';
-import LegendPanel from '../components/LegendPanel.astro';
+import Game from '../components/Game.svelte';
 import { getTiles } from '../lib/tiles';
 import { getI18n } from '../lib/i18n';
 
@@ -21,10 +21,7 @@ const tiles = getTiles(lang);
       <Board tiles={tiles} boardLabel={t.board_label} tileWord={t.tile_word} />
 
       <aside class="gb__sidebar">
-        <LegendPanel t={t} />
-        <section id="tile-content" class="gb__panel gb__content" aria-live="polite">
-          <p class="gb__hint">{t.hint_start}</p>
-        </section>
+        <Game client:load tiles={tiles} t={t} />
       </aside>
     </div>
   </div>
