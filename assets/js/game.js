@@ -5,6 +5,10 @@
   let tiles = {};
   try { tiles = JSON.parse(dataEl.textContent); } catch { tiles = {}; }
 
+  const i18nEl = document.getElementById('i18n-data');
+  let t = {};
+  try { t = JSON.parse(i18nEl.textContent); } catch { t = {}; }
+
   const rollBtn = document.getElementById('gb-roll');
   const rollResult = document.getElementById('gb-roll-result');
   const endBtn = document.getElementById('gb-end');
@@ -35,17 +39,18 @@
   }
 
   function renderContent(n) {
-    const t = tiles[String(n)] || {};
-    const status = t.status || 'empty';
-    let html = '<p class="tile-pos">Vakje ' + n + '</p>';
-    if (t.title) html += '<h2>' + escapeHtml(t.title) + '</h2>';
-    if (t.body) {
-      html += '<div>' + miniMd(t.body) + '</div>';
+    const tile = tiles[String(n)] || {};
+    const status = tile.status || 'empty';
+    const tileWord = t.tile_word || 'Tile';
+    let html = '<p class="tile-pos">' + tileWord + ' ' + n + '</p>';
+    if (tile.title) html += '<h2>' + escapeHtml(tile.title) + '</h2>';
+    if (tile.body) {
+      html += '<div>' + miniMd(tile.body) + '</div>';
     } else if (status === 'empty') {
-      html += '<p class="gb__hint">Leeg vakje — nog geen inhoud gevuld. Open <code>data/tiles/v1.yaml</code> om er iets voor te schrijven.</p>';
+      html += '<p class="gb__hint">' + escapeHtml(t.hint_empty || 'Empty tile.') + '</p>';
     }
-    if (t.did_you_know) {
-      html += '<div class="dyk"><strong>Did you know:</strong> ' + miniMd(t.did_you_know) + '</div>';
+    if (tile.did_you_know) {
+      html += '<div class="dyk"><strong>' + escapeHtml(t.did_you_know || 'Did you know:') + '</strong> ' + miniMd(tile.did_you_know) + '</div>';
     }
     contentEl.innerHTML = html;
   }

@@ -1,18 +1,20 @@
 {{ define "main" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $dataKey := printf "v1_%s" $lang }}
+{{ $tiles := index .Site.Data.tiles $dataKey }}
 <div class="gb">
   <header class="gb__header">
-    <p class="gb__edition">Editie 2026</p>
-    <h1 class="gb__title">Chinese op Fietspad</h1>
-    <p class="gb__subtitle">Een ganzenbord over Nederland. Gooi en zie waar je belandt.</p>
+    <p class="gb__edition">{{ i18n "game_edition" }}</p>
+    <h1 class="gb__title">{{ i18n "game_title" }}</h1>
+    <p class="gb__subtitle">{{ i18n "game_subtitle" }}</p>
   </header>
 
   <div class="gb__board-wrap">
-    <ol class="gb__board" role="list" aria-label="Ganzenbord van 63 vakjes">
-      {{ $tiles := .Site.Data.tiles.v1 }}
+    <ol class="gb__board" role="list" aria-label="{{ i18n "board_label" }}">
       {{ range seq 1 63 }}
         {{ $n := printf "%d" . }}
         {{ $tile := index $tiles $n }}
-        {{ partial "game/tile.html" (dict "number" . "tile" $tile) }}
+        {{ partial "game/tile.html" (dict "number" . "tile" $tile "lang" $lang) }}
       {{ end }}
     </ol>
   </div>
@@ -20,11 +22,12 @@
   {{ partial "game/dice.html" . }}
 
   <section id="tile-content" class="gb__content" aria-live="polite">
-    <p class="gb__hint">Gooi de dobbelstenen om te beginnen, of klik op een vakje.</p>
+    <p class="gb__hint">{{ i18n "hint_start" }}</p>
   </section>
 </div>
 
 {{ partial "game/end-overlay.html" . }}
 
-<script id="tiles-data" type="application/json">{{ .Site.Data.tiles.v1 | jsonify | safeJS }}</script>
+<script id="tiles-data" type="application/json">{{ $tiles | jsonify | safeJS }}</script>
+<script id="i18n-data" type="application/json">{{ dict "tile_word" (i18n "tile_word") "hint_empty" (i18n "hint_empty") "did_you_know" (i18n "did_you_know") | jsonify | safeJS }}</script>
 {{ end }}

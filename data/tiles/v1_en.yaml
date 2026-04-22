@@ -1,19 +1,4 @@
-# Editie 2026 — tile data
-#
-# Edit this file to fill in themed tiles. Tile shape:
-#
-#   "N":
-#     status: filled           # empty | filled | reserved | hazard
-#     suit: material           # geography | material | food | people
-#     title: Short title
-#     body: |
-#       Longer observation body. Markdown supported.
-#     did_you_know: |
-#       Optional "Did you know" counter-fact.
-#     icon: fa fa-mug-hot      # optional FontAwesome class
-#
-# Tile 39 is reserved for the counter-punch to the Amsterdam 750 book —
-# do not fill it casually.
+# Editie 2026 — English tile data
 
 "1":
   status: empty
@@ -26,7 +11,6 @@
 
 "4":
   status: filled
-  # suit: geography
   title: There is no mountain
   body: It is flat, absolutely flat. You never need to worry about a car's engine overheating when driving uphill, because there is no uphill.
   icon: fa fa-mountain
@@ -34,14 +18,14 @@
 "5":
   status: hazard
   hazard_type: goose
-  title: De gans
-  body: Gans! Ga door naar de volgende gans.
+  title: The goose
+  body: "Goose! Move forward to the next goose."
 
 "6":
   status: hazard
   hazard_type: bridge
-  title: De brug
-  body: Neem de brug en spring vooruit naar vakje 12.
+  title: The bridge
+  body: "Take the bridge and jump ahead to tile 12."
 
 "7":
   status: empty
@@ -52,8 +36,8 @@
 "9":
   status: hazard
   hazard_type: goose
-  title: De gans
-  body: Gans! Ga door naar de volgende gans.
+  title: The goose
+  body: "Goose! Move forward to the next goose."
 
 "10":
   status: empty
@@ -65,7 +49,7 @@
   status: filled
   suit: environment
   title: It can rain in the next minute
-  body: The rain comes and goes. Dutch people use the 'buienradar' (the rain radar) app to check whether it will rain and plan their commute accordingly.
+  body: The rain comes and goes. Dutch people use the 'Buienradar' (rain radar) app to check whether it will rain and plan their commute accordingly.
   icon: fa fa-cloud-rain
 
 "13":
@@ -74,8 +58,8 @@
 "14":
   status: hazard
   hazard_type: goose
-  title: De gans
-  body: Gans! Ga door naar de volgende gans.
+  title: The goose
+  body: "Goose! Move forward to the next goose."
 
 "15":
   status: empty
@@ -92,14 +76,14 @@
 "18":
   status: hazard
   hazard_type: goose
-  title: De gans
-  body: Gans! Ga door naar de volgende gans.
+  title: The goose
+  body: "Goose! Move forward to the next goose."
 
 "19":
   status: hazard
   hazard_type: inn
-  title: De herberg
-  body: Pauze in de herberg. Sla één beurt over.
+  title: The inn
+  body: "Rest at the inn. Skip one turn."
 
 "20":
   status: empty
@@ -122,8 +106,8 @@
 "23":
   status: hazard
   hazard_type: goose
-  title: De gans
-  body: Gans! Ga door naar de volgende gans.
+  title: The goose
+  body: "Goose! Move forward to the next goose."
 
 "24":
   status: empty
@@ -140,8 +124,8 @@
 "27":
   status: hazard
   hazard_type: goose
-  title: De gans
-  body: Gans! Ga door naar de volgende gans.
+  title: The goose
+  body: "Goose! Move forward to the next goose."
 
 "28":
   status: filled
@@ -158,14 +142,14 @@
 "31":
   status: hazard
   hazard_type: well
-  title: De put
-  body: Je bent in de put. Wacht tot een ander speler je bevrijdt.
+  title: The well
+  body: "You fell into the well. Wait until another player frees you."
 
 "32":
   status: hazard
   hazard_type: goose
-  title: De gans
-  body: Gans! Ga door naar de volgende gans.
+  title: The goose
+  body: "Goose! Move forward to the next goose."
 
 "33":
   status: filled
@@ -185,23 +169,23 @@
 "36":
   status: hazard
   hazard_type: goose
-  title: De gans
-  body: Gans! Ga door naar de volgende gans.
+  title: The goose
+  body: "Goose! Move forward to the next goose."
 
 "37":
   status: empty
 
 "38":
   status: filled
-  title: People fill up their agenda half an year in advance
+  title: People fill up their agenda half a year in advance
   body: While you are still thinking about what to do next week, your Dutch friends have already filled up their agenda for the next 6 months.
   icon: fa fa-calendar
 
 "39":
   status: reserved
   suit: null
-  title: "Vakje 39 | Bicycle road rage"
-  body: Dutch people get aggressive when they are on a bicycle, even on the wrong direction. You will hear if you are not cycling fast enough, or if you are not supposed to be there.
+  title: "Tile 39 | Bicycle road rage"
+  body: Dutch people get aggressive when they are on a bicycle, even in the wrong direction. You will hear about it if you are not cycling fast enough, or if you are not supposed to be there.
   did_you_know: null
 
 "40":
@@ -213,12 +197,12 @@
 "41":
   status: hazard
   hazard_type: goose
-  title: De gans
-  body: Gans! Ga door naar de volgende gans.
+  title: The goose
+  body: "Goose! Move forward to the next goose."
 
 "42":
   status: filled
-  title: Limburges is a different language
+  title: Limburgish is a different language
   body: |
     Dutch people mock Limburgers for their dialect as if it is a different language.
     To Chinese ears, the difference is smaller than Beijing dialect and Northern dialects.
@@ -233,8 +217,8 @@
 "45":
   status: hazard
   hazard_type: goose
-  title: De gans
-  body: Gans! Ga door naar de volgende gans.
+  title: The goose
+  body: "Goose! Move forward to the next goose."
 
 "46":
   status: empty
@@ -255,8 +239,8 @@
 "50":
   status: hazard
   hazard_type: goose
-  title: De gans
-  body: Gans! Ga door naar de volgende gans.
+  title: The goose
+  body: "Goose! Move forward to the next goose."
 
 "51":
   status: empty
@@ -264,12 +248,12 @@
 "52":
   status: hazard
   hazard_type: prison
-  title: De gevangenis | trains
+  title: The prison | Trains
   body: |
-    Achter de tralies.
+    Behind bars.
     The weather is too hot (40°C) so the trains are not running.
-    Wacht tot een ander speler je aflost.
-  did_you_know: Chinese high speed trains run all year around from -20°C to 40°C, and they are designed to run in extreme weather conditions.
+    Wait until another player takes your place.
+  did_you_know: Chinese high-speed trains run all year round from -20°C to 40°C, and they are designed to run in extreme weather conditions.
 
 "53":
   status: empty
@@ -277,13 +261,13 @@
 "54":
   status: hazard
   hazard_type: goose
-  title: De gans
-  body: Gans! Ga door naar de volgende gans.
+  title: The goose
+  body: "Goose! Move forward to the next goose."
 
 "55":
   status: filled
   title: Frying is the most popular cooking method
-  body: Fish...fried, bitterballen(meat mixture)...fried, kroket(meat mixture)...fried, frikandel(meat mixture)...fried, patat(potato)...fried, and so on.
+  body: Fish...fried, bitterballen (meat mixture)...fried, kroket (meat mixture)...fried, frikandel (meat mixture)...fried, patat (potato)...fried, and so on.
   icon: fa fa-hotdog
 
 "56":
@@ -295,24 +279,24 @@
 "58":
   status: hazard
   hazard_type: death
-  title: De dood
-  body: Dood. Begin opnieuw bij vakje 1.
+  title: Death
+  body: "Dead. Start over at tile 1."
 
 "59":
   status: hazard
   hazard_type: goose
-  title: De gans
-  body: Gans! Ga door naar de volgende gans.
+  title: The goose
+  body: "Goose! Move forward to the next goose."
 
 "60":
   status: hazard
   hazard_type: maze
-  title: Het doolhof | Paracetamol heals everything
+  title: The maze | Paracetamol heals everything
   body: |
-    Verdwaald in het doolhof.
-    When you visit GP, they will often suggest you to take paracetamol with hot water, and you will be fine.
-    Also, often times before your appointment with GP in 2 weeks, you already recovered yourself.
-    Terug naar vakje 39.
+    Lost in the maze.
+    When you visit the GP, they will often suggest you take paracetamol with hot water, and you will be fine.
+    Also, often before your appointment with the GP in 2 weeks, you have already recovered on your own.
+    Go back to tile 39.
 
 "61":
   status: empty
@@ -324,4 +308,4 @@
   status: hazard
   hazard_type: goal
   title: Finish
-  body: Je hebt het bord gehaald. Klik op "Einde spel" om te zien waarom dit bestaat.
+  body: "You made it to the end. Click 'End game' to see why this exists."

@@ -1,6 +1,6 @@
 {{/*
   Single tile renderer.
-  Expects: dict "number" (int) "tile" (map from data/tiles/v1.yaml)
+  Expects: dict "number" (int) "tile" (map from data/tiles/v1_*.yaml) "lang" (string)
 */}}
 {{ $n := .number }}
 {{ $t := .tile }}
@@ -10,8 +10,9 @@
 {{ $classes := slice "tile" (printf "tile--%s" $status) }}
 {{ with $suit }}{{ $classes = $classes | append (printf "tile--suit-%s" .) }}{{ end }}
 {{ with $hazard }}{{ $classes = $classes | append (printf "tile--hazard-%s" .) }}{{ end }}
-{{ $label := printf "Vakje %d" $n }}
-{{ with $t.title }}{{ $label = printf "Vakje %d: %s" $n . }}{{ end }}
+{{ $tileWord := i18n "tile_word" }}
+{{ $label := printf "%s %d" $tileWord $n }}
+{{ with $t.title }}{{ $label = printf "%s %d: %s" $tileWord $n . }}{{ end }}
 <li class="gb__cell" data-tile="{{ $n }}">
   <a id="tile-{{ $n }}"
      href="#tile-{{ $n }}"

@@ -1,0 +1,38 @@
+game_edition:
+  other: "Editie 2026"
+game_title:
+  other: "Chinese op Fietspad"
+game_subtitle:
+  other: "Een ganzenbord over Nederland. Gooi en zie waar je belandt."
+roll_label:
+  other: "Gooi de dobbelstenen"
+end_game:
+  other: "Einde spel"
+controls_label:
+  other: "Spelbesturing"
+close_label:
+  other: "Sluiten"
+tile_word:
+  other: "Vakje"
+board_label:
+  other: "Ganzenbord van 63 vakjes"
+hint_start:
+  other: "Gooi de dobbelstenen om te beginnen, of klik op een vakje."
+hint_empty:
+  other: "Leeg vakje — nog geen inhoud gevuld."
+did_you_know:
+  other: "Wist je dat:"
+overlay_title:
+  other: "Waarom dit spel bestaat"
+overlay_quote:
+  other: "\"Chinese toeristen blokkeren het fietspad. Om ze te ontwijken ga je terug naar vakje 39.\""
+overlay_cite:
+  other: "Amsterdam 750 jaar, een boek voor 60.000 basisschoolleerlingen."
+overlay_original:
+  other: ""
+overlay_original_quote:
+  other: ""
+overlay_body:
+  other: "Dit is een placeholder. Vervang deze tekst in <code>layouts/_partials/game/end-overlay.html</code>."
+overlay_cta:
+  other: "Draag een vakje bij"

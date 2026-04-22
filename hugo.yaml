@@ -6,7 +6,6 @@ title: Chinese op Fietspad
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
 # Language settings
-contentDir: content/en
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 # Useful when translating.
@@ -48,28 +47,16 @@ imaging:
 languages:
   en:
     languageName: English
+    contentDir: content/en
     title: Chinese op Fietspad
     params:
-      description: A Docsy example site
-  # cSpell:disable
-  # 'no':
-  #   languageName: Norsk
-  #   contentDir: content/no
-  #   title: Gulldoks
-  #   params:
-  #     description: Docsy er operativsystem for skyen
-  #     time_format_default: 02.01.2006
-  #     time_format_blog: 02.01.2006
-  # fa:
-  #   languageDirection: rtl
-  #   languageName: "فارسی (Persian)"
-  #   contentDir: content/fa
-  #   title: "اسناد گلدی"
-  #   params:
-  #     description: "یک نمونه برای پوسته داکسی"
-  #     time_format_default: 2006.01.02
-  #     time_format_blog: 2006.01.02
-  # cSpell:enable
+      description: A ganzenbord about the Netherlands — Edition 2026.
+  nl:
+    languageName: Nederlands
+    contentDir: content/nl
+    title: Chinese op Fietspad
+    params:
+      description: Een ganzenbord over Nederland — Editie 2026.
 
 markup:
   goldmark:

@@ -1,0 +1,311 @@
+# Editie 2026 — Nederlandse tegeldata
+
+"1":
+  status: empty
+
+"2":
+  status: empty
+
+"3":
+  status: empty
+
+"4":
+  status: filled
+  title: Er is geen berg
+  body: Het is plat, helemaal plat. Je hoeft je nooit zorgen te maken dat de motor van je auto oververhit raakt bij het bergop rijden, want er is geen berg.
+  icon: fa fa-mountain
+
+"5":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: "Gans! Ga door naar de volgende gans."
+
+"6":
+  status: hazard
+  hazard_type: bridge
+  title: De brug
+  body: "Neem de brug en spring vooruit naar vakje 12."
+
+"7":
+  status: empty
+
+"8":
+  status: empty
+
+"9":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: "Gans! Ga door naar de volgende gans."
+
+"10":
+  status: empty
+
+"11":
+  status: empty
+
+"12":
+  status: filled
+  suit: environment
+  title: Het kan zo gaan regenen
+  body: De regen komt en gaat. Nederlanders gebruiken de Buienradar-app om te checken of het gaat regenen en plannen hun reis daarop.
+  icon: fa fa-cloud-rain
+
+"13":
+  status: empty
+
+"14":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: "Gans! Ga door naar de volgende gans."
+
+"15":
+  status: empty
+
+"16":
+  status: filled
+  title: Heet water bestaat niet
+  body: Als je gewoon warm water wilt in een restaurant, moet je een kopje thee bestellen. Dat komt meestal met een theezakje en een koekje of chocolaatje, ook als je alleen warm water wilt — en je betaalt voor het geheel.
+  icon: fa fa-mug-hot
+
+"17":
+  status: empty
+
+"18":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: "Gans! Ga door naar de volgende gans."
+
+"19":
+  status: hazard
+  hazard_type: inn
+  title: De herberg
+  body: "Pauze in de herberg. Sla één beurt over."
+
+"20":
+  status: empty
+
+"21":
+  status: filled
+  title: De lunch is geen lunch
+  body: |
+    Rond lunchtijd pakken Nederlanders hun boterhammen uit een klein plastic zakje —
+    je kunt deze zakjes in de supermarkt kopen, ze heten 'broodzakjes'.
+    Dat is het, als lunch.
+  icon: fa fa-bread-slice
+
+"22":
+  status: filled
+  title: Nederlands feestje
+  body: Op Nederlandse feestjes zitten mensen gewoon in een kring en praten, en dat is het. Geen muziek, geen eten (nou ja, borrelhapjes), geen spelletjes, geen activiteiten.
+  icon: fa fa-people-group
+
+"23":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: "Gans! Ga door naar de volgende gans."
+
+"24":
+  status: empty
+
+"25":
+  status: empty
+
+"26":
+  status: filled
+  title: Flessendoppen
+  body: Dankzij EU-regelgeving zitten plastic flessendoppen vast aan de fles, zodat je ze niet apart kunt weggooien.
+  icon: fa fa-bottle-water
+
+"27":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: "Gans! Ga door naar de volgende gans."
+
+"28":
+  status: filled
+  title: Verzendkosten
+  body: Als je iets kleins online bestelt, moet je verzendkosten betalen, zelfs als het artikel goedkoop is. Gratis verzending bestaat niet.
+  icon: fa fa-truck
+
+"29":
+  status: empty
+
+"30":
+  status: empty
+
+"31":
+  status: hazard
+  hazard_type: well
+  title: De put
+  body: "Je bent in de put. Wacht tot een andere speler je bevrijdt."
+
+"32":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: "Gans! Ga door naar de volgende gans."
+
+"33":
+  status: filled
+  title: Winkels zijn ook 9 tot 5
+  body: Oké, 9 tot 6 om precies te zijn. Maar als je klaar bent met werken, zijn alle winkels dicht. Je kunt alleen nog naar de supermarkt, die misschien tot 22:00 open is.
+  icon: fa fa-store
+
+"34":
+  status: empty
+
+"35":
+  status: filled
+  title: Eten is duur maar bier valt mee
+  body: Nederlanders klagen over de hoge voedselprijzen, maar over de bierprijzen hoor je ze niet.
+  icon: fa fa-beer
+
+"36":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: "Gans! Ga door naar de volgende gans."
+
+"37":
+  status: empty
+
+"38":
+  status: filled
+  title: Alles staat al in de agenda
+  body: Terwijl jij nog nadenkt over wat je volgende week gaat doen, hebben je Nederlandse vrienden hun agenda al zes maanden van tevoren volgepland.
+  icon: fa fa-calendar
+
+"39":
+  status: reserved
+  suit: null
+  title: "Vakje 39 | Fietswoede"
+  body: Nederlanders worden agressief op de fiets, zelfs als ze zelf de verkeerde kant op fietsen. Je hoort het wel als je niet snel genoeg fietst, of als je er niet hoort te zijn.
+  did_you_know: null
+
+"40":
+  status: filled
+  title: Stakingen zijn ook ingepland
+  body: Machinisten hebben hun rooster een jaar van tevoren gepland. En als ze dan staken, wordt dat ook nog eens weken van tevoren aangekondigd.
+  icon: fa fa-train
+
+"41":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: "Gans! Ga door naar de volgende gans."
+
+"42":
+  status: filled
+  title: Limburgs is een andere taal
+  body: |
+    Nederlanders maken grappen over Limburgers en hun dialect alsof het een andere taal is.
+    Voor Chinese oren is het verschil kleiner dan tussen het Peking-dialect en noordelijke dialecten.
+  icon: fa fa-ear-listen
+
+"43":
+  status: empty
+
+"44":
+  status: empty
+
+"45":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: "Gans! Ga door naar de volgende gans."
+
+"46":
+  status: empty
+
+"47":
+  status: empty
+
+"48":
+  status: filled
+  title: Nasi en bami zijn niet Chinees
+  body: |
+    Nederlanders kennen maar twee 'Chinese' gerechten: nasi en bami, die eigenlijk Indonesisch zijn.
+  icon: fa fa-bowl-food
+
+"49":
+  status: empty
+
+"50":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: "Gans! Ga door naar de volgende gans."
+
+"51":
+  status: empty
+
+"52":
+  status: hazard
+  hazard_type: prison
+  title: De gevangenis | Treinen
+  body: |
+    Achter de tralies.
+    Het is te warm (40°C) dus de treinen rijden niet.
+    Wacht tot een andere speler je aflost.
+  did_you_know: Chinese hogesnelheidstreinen rijden het hele jaar door, van -20°C tot 40°C, en ze zijn ontworpen om onder extreme weersomstandigheden te functioneren.
+
+"53":
+  status: empty
+
+"54":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: "Gans! Ga door naar de volgende gans."
+
+"55":
+  status: filled
+  title: Frituren is de populairste kookmethode
+  body: Vis...gefrituurd, bitterballen (vleesmengsel)...gefrituurd, kroket (vleesmengsel)...gefrituurd, frikandel (vleesmengsel)...gefrituurd, patat (aardappel)...gefrituurd, enzovoort.
+  icon: fa fa-hotdog
+
+"56":
+  status: empty
+
+"57":
+  status: empty
+
+"58":
+  status: hazard
+  hazard_type: death
+  title: De dood
+  body: "Dood. Begin opnieuw bij vakje 1."
+
+"59":
+  status: hazard
+  hazard_type: goose
+  title: De gans
+  body: "Gans! Ga door naar de volgende gans."
+
+"60":
+  status: hazard
+  hazard_type: maze
+  title: Het doolhof | Paracetamol geneest alles
+  body: |
+    Verdwaald in het doolhof.
+    Als je naar de huisarts gaat, stellen ze vaak voor om paracetamol met warm water te nemen, en dan komt het wel goed.
+    En vaak ben je al beter voordat je afspraak over 2 weken is.
+    Terug naar vakje 39.
+
+"61":
+  status: empty
+
+"62":
+  status: empty
+
+"63":
+  status: hazard
+  hazard_type: goal
+  title: Finish
+  body: "Je hebt het bord gehaald. Klik op 'Einde spel' om te zien waarom dit bestaat."

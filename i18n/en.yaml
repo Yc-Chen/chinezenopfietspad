@@ -1,0 +1,38 @@
+game_edition:
+  other: "Edition 2026"
+game_title:
+  other: "Chinese op Fietspad"
+game_subtitle:
+  other: "A ganzenbord about the Netherlands. Roll and see where you end up."
+roll_label:
+  other: "Roll the dice"
+end_game:
+  other: "End game"
+controls_label:
+  other: "Game controls"
+close_label:
+  other: "Close"
+tile_word:
+  other: "Tile"
+board_label:
+  other: "Ganzenbord of 63 tiles"
+hint_start:
+  other: "Roll the dice to begin, or click on a tile."
+hint_empty:
+  other: "Empty tile — no content filled yet."
+did_you_know:
+  other: "Did you know:"
+overlay_title:
+  other: "Why this game exists"
+overlay_quote:
+  other: "\"Chinese tourists are blocking the bike path. To avoid them, go back to square 39.\""
+overlay_cite:
+  other: "Amsterdam 750 Years, a book distributed to 60,000 primary school children."
+overlay_original:
+  other: "Original Dutch"
+overlay_original_quote:
+  other: "\"Chinese toeristen blokkeren het fietspad. Om ze te ontwijken ga je terug naar vakje 39.\""
+overlay_body:
+  other: "This is a placeholder. Replace this text in <code>layouts/_partials/game/end-overlay.html</code>."
+overlay_cta:
+  other: "Contribute a tile"
