@@ -1,16 +1,88 @@
 import { writable, get } from 'svelte/store';
+import type * as Y from 'yjs';
+import type { PlayerState } from './p2p';
 
 export const currentTile = writable<number>(0);
 export const tokenTile = writable<number>(0);
 export const lastRoll = writable<number | null>(null);
 export const overlayOpen = writable<boolean>(false);
 export const rolling = writable<boolean>(false);
+export const roomId = writable<string | null>(null);
 
 const SHAKE_MS = 380;
 const HOP_MS = 120;
 
+let yPlayers: Y.Map<PlayerState> | null = null;
+let yTurn: Y.Map<unknown> | null = null;
+let localPlayerId: string | null = null;
+let yCleanup: (() => void) | null = null;
+
 export function prefersReducedMotion(): boolean {
   return typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+export function connectYjs(
+  players: Y.Map<PlayerState>,
+  turn: Y.Map<unknown>,
+  playerId: string,
+): () => void {
+  yPlayers = players;
+  yTurn = turn;
+  localPlayerId = playerId;
+
+  const local = players.get(playerId);
+  if (local && local.position > 0) {
+    currentTile.set(local.position);
+    tokenTile.set(local.position);
+  }
+
+  const lastTurnRoll = turn.get('lastRoll') as number | undefined;
+  if (lastTurnRoll) lastRoll.set(lastTurnRoll);
+
+  const observePlayers = () => {
+    if (!localPlayerId) return;
+    const state = players.get(localPlayerId);
+    if (state) {
+      const pos = state.position;
+      const cur = get(currentTile);
+      if (pos !== cur && pos > 0) {
+        currentTile.set(pos);
+        tokenTile.set(pos);
+        updateHashAndScroll(pos);
+      }
+    }
+  };
+
+  const observeTurn = () => {
+    const r = turn.get('lastRoll') as number | undefined;
+    if (r != null) lastRoll.set(r);
+  };
+
+  players.observe(observePlayers);
+  turn.observe(observeTurn);
+
+  yCleanup = () => {
+    players.unobserve(observePlayers);
+    turn.unobserve(observeTurn);
+    yPlayers = null;
+    yTurn = null;
+    localPlayerId = null;
+  };
+
+  return yCleanup;
+}
+
+function syncToYjs(position: number, roll: number | null): void {
+  if (!yPlayers || !yTurn || !localPlayerId) return;
+  const current = yPlayers.get(localPlayerId);
+  if (current) {
+    yPlayers.set(localPlayerId, { ...current, position });
+  }
+  if (roll != null) {
+    yTurn.set('lastRoll', roll);
+    yTurn.set('lastRollBy', localPlayerId);
+    yTurn.set('lastRollAt', Date.now());
+  }
 }
 
 function updateHashAndScroll(n: number): void {
@@ -30,6 +102,7 @@ export function goToTile(n: number): void {
   const clamped = Math.max(1, Math.min(63, n));
   currentTile.set(clamped);
   tokenTile.set(clamped);
+  syncToYjs(clamped, null);
   updateHashAndScroll(clamped);
 }
 
@@ -50,6 +123,7 @@ export async function rollDice(): Promise<void> {
     rolling.set(false);
     tokenTile.set(to);
     currentTile.set(to);
+    syncToYjs(to, roll);
     updateHashAndScroll(to);
     return;
   }
@@ -71,6 +145,7 @@ export async function rollDice(): Promise<void> {
   }
 
   currentTile.set(to);
+  syncToYjs(to, roll);
   updateHashAndScroll(to);
 }
 

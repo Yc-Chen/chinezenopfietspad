@@ -27,5 +27,7 @@
   "legend_maze": "Doolhof — ga terug",
   "legend_prison": "Gevangenis — wacht op aflossing",
   "legend_death": "Dood — begin opnieuw",
-  "legend_goal": "Finish!"
+  "legend_goal": "Finish!",
+  "share_label": "Delen",
+  "share_copied": "Link gekopieerd!"
 }

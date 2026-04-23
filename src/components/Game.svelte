@@ -3,7 +3,7 @@
   import { get } from 'svelte/store';
   import type { TileMap } from '../lib/tiles';
   import type { I18nBundle } from '../lib/i18n';
-  import { currentTile, tokenTile, goToTile } from '../lib/game-state';
+  import { currentTile, tokenTile, goToTile, roomId, connectYjs } from '../lib/game-state';
   import Dice from './Dice.svelte';
   import TileContent from './TileContent.svelte';
   import EndOverlay from './EndOverlay.svelte';
@@ -91,6 +91,22 @@
     window.addEventListener('resize', onResize);
     cleanup.push(() => window.removeEventListener('resize', onResize));
 
+    // Check for room param → lazy-load P2P and join room
+    const params = new URLSearchParams(window.location.search);
+    const room = params.get('room');
+    if (room) {
+      roomId.set(room);
+      import('../lib/p2p').then(({ joinRoom, leaveRoom }) => {
+        const { players, turn, localId } = joinRoom(room);
+        const yjsCleanup = connectYjs(players, turn, localId);
+        cleanup.push(() => {
+          yjsCleanup();
+          leaveRoom();
+        });
+      });
+    }
+
+    // Check for hash → go to tile
     const match = location.hash.match(/^#tile-(\d+)$/);
     if (match) {
       const n = parseInt(match[1], 10);

@@ -27,5 +27,7 @@
   "legend_maze": "Maze — go back",
   "legend_prison": "Prison — wait for rescue",
   "legend_death": "Death — start over",
-  "legend_goal": "Finish!"
+  "legend_goal": "Finish!",
+  "share_label": "Share",
+  "share_copied": "Link copied!"
 }

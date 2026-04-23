@@ -291,6 +291,7 @@ a { color: inherit; }
 }
 
 .gb__roll,
+.gb__share,
 .gb__end {
   border: 0;
   border-radius: 999px;
@@ -338,6 +339,12 @@ a { color: inherit; }
   font-variant-numeric: tabular-nums;
   min-width: 1.5em;
   text-align: center;
+}
+
+.gb__share {
+  background: #fff;
+  color: #111;
+  border: 1px solid #ccc;
 }
 
 .gb__end {
