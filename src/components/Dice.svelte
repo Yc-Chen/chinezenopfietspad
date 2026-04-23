@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { I18nBundle } from '../lib/i18n';
-  import { lastRoll, rollDice, openOverlay, rolling, roomId } from '../lib/game-state';
+  import { lastRoll, rollDice, openOverlay, rolling, roomId, skippingTurn } from '../lib/game-state';
 
   let { t }: { t: I18nBundle } = $props();
 
@@ -34,7 +34,7 @@
   <div class="gb__controls" role="group" aria-label={t.controls_label}>
     <button type="button" class="gb__roll" onclick={rollDice} disabled={$rolling}>
       <span class="gb__roll-icon" class:rolling={$rolling} aria-hidden="true">{shakeFace}</span>
-      <span class="gb__roll-label">{t.roll_label}</span>
+      <span class="gb__roll-label">{$skippingTurn ? t.skip_turn : t.roll_label}</span>
       <span class="gb__roll-result" aria-live="polite">{$lastRoll ?? ''}</span>
     </button>
     {#if !$roomId}

@@ -71,32 +71,34 @@ Blockers before v1 can ship:
 - **Self-imposed freeze discipline.** If editions can't actually be frozen on a solo project, fall back to a dated "Living Edition" with a visible changelog.
 
 
+## Hazard effects
+
+All classic ganzenbord hazard tiles are now gameplay-active:
+
+| Hazard | Tiles | Effect |
+|---|---|---|
+| Goose | 5,9,14,18,23,27,32,36,41,45,50,54,59 | Move forward to the next goose tile |
+| Bridge | 6 | Jump ahead to tile 12 |
+| Inn | 19 | Skip one turn (next roll is consumed) |
+| Well | 31 | Fall back 5 tiles |
+| Maze | 60 | Go back to tile 39 |
+| Prison | 52 | Fall back 5 tiles |
+| Death | 58 | Start over at tile 1 |
+| Goal | 63 | Must land exactly; overshoot bounces back |
+
+In single-player, Well and Prison send you back 5 tiles (no "wait for rescue" mechanic without other players).
+
+## Stack
+
+Migrated from Hugo to **Astro + Svelte** (April 2026):
+- **Astro 5** — static site generator (`output: 'static'`, GitHub Pages deploy)
+- **Svelte 5** — interactive game island (`client:load`) with runes mode
+- **Yjs + y-webrtc** — P2P multiplayer state sync (lazy-loaded, no server)
+- **SCSS** — styles with Sass modules
+
 ## Next steps
-Your next steps (from PLAN.md)
 
-  1. Fill tile 39 — the counter-punch.
-  2. Fill ~14 more themed tiles for v1 (edit data/tiles/v1.yaml, each ~5 min).
-  3. Rewrite the end-overlay copy in layouts/_partials/game/end-overlay.html — there's a
-  placeholder // TODO there now.
-  4. Push to GitHub, go to repo Settings → Pages → Source = "GitHub Actions".
-  5. When you buy the domain: update baseURL in hugo.yaml, add static/CNAME with the domain,
-  set DNS records, enable HTTPS in repo settings.
-
-
-    1. PostHog — Open-source, self-hostable, free tier (1M events/mo). Built for product/event
-  analytics. You fire custom events like posthog.capture('dice_roll', {value: 4, tile:
-  'goose'}) and get funnels, session replays, heatmaps. Probably the best fit here.
-  2. Mixpanel — Free tier (20M events/mo). Purpose-built for event tracking. Similar custom
-  events approach. Hosted only, but generous free plan.
-  3. Amplitude — Similar to Mixpanel, free tier available. Strong for understanding user flows
-   through a game.
-  4. Custom + Supabase/Firebase — Roll your own: log events to a simple database table. Full    control, no third-party scripts. Firebase has a generous free tier and works well for
-  lightweight game telemetry.
-  5. GA4 custom events — GA4 can do custom events (gtag('event', 'roll_dice', {...})), but the
-   reporting UI is clunky for game-style event data. Workable if you want to keep it simple.
-
-  What I'd recommend: For a Ganzenbord game, PostHog hits the sweet spot — free, one script
-  tag, custom events are trivial to add, and you get session replay (watch people actually
-  play the game) for free. No cookie banner needed if you disable cookies in the config.
-
-  Want me to wire one of these into the game?
+1. Fill remaining empty tiles for v1 (edit `src/data/tiles/v1_en.yaml` and `v1_nl.yaml`).
+2. Favicon, OG image, Twitter card for shareable links.
+3. Full multiplayer UX: lobby, player colors, turn enforcement.
+4. Analytics (PostHog recommended — free, custom events, session replay).

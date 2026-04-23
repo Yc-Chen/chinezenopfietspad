@@ -3,7 +3,7 @@
   import { get } from 'svelte/store';
   import type { TileMap } from '../lib/tiles';
   import type { I18nBundle } from '../lib/i18n';
-  import { currentTile, tokenTile, goToTile, roomId, connectYjs } from '../lib/game-state';
+  import { currentTile, tokenTile, goToTile, roomId, connectYjs, setTileData } from '../lib/game-state';
   import Dice from './Dice.svelte';
   import TileContent from './TileContent.svelte';
   import EndOverlay from './EndOverlay.svelte';
@@ -57,6 +57,8 @@
   }
 
   onMount(() => {
+    setTileData(tiles);
+
     const wrap = document.querySelector<HTMLElement>('.gb__board-wrap');
     if (wrap && tokenEl) {
       wrap.appendChild(tokenEl);

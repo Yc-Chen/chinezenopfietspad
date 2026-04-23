@@ -29,5 +29,6 @@
   "legend_death": "Death — start over",
   "legend_goal": "Finish!",
   "share_label": "Share",
-  "share_copied": "Link copied!"
+  "share_copied": "Link copied!",
+  "skip_turn": "Skip turn"
 }
