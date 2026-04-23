@@ -30,5 +30,13 @@
   "legend_goal": "Finish!",
   "share_label": "Share",
   "share_copied": "Link copied!",
-  "skip_turn": "Skip turn"
+  "skip_turn": "Skip turn",
+  "your_turn": "Your turn",
+  "waiting_for": "Waiting...",
+  "player_label": "Player",
+  "player_you": "(you)",
+  "player_stuck_well": "Stuck in well",
+  "player_stuck_prison": "In prison",
+  "player_stuck_inn": "Resting at inn",
+  "players_title": "Players"
 }

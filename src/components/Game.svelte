@@ -3,10 +3,21 @@
   import { get } from 'svelte/store';
   import type { TileMap } from '../lib/tiles';
   import type { I18nBundle } from '../lib/i18n';
-  import { currentTile, tokenTile, goToTile, roomId, connectYjs, setTileData } from '../lib/game-state';
+  import {
+    currentTile,
+    tokenTile,
+    goToTile,
+    roomId,
+    connectYjs,
+    setTileData,
+    initSinglePlayer,
+    allPlayers,
+    localId,
+  } from '../lib/game-state';
   import Dice from './Dice.svelte';
   import TileContent from './TileContent.svelte';
   import EndOverlay from './EndOverlay.svelte';
+  import PlayerList from './PlayerList.svelte';
 
   let { tiles, t }: { tiles: TileMap; t: I18nBundle } = $props();
 
@@ -21,11 +32,18 @@
     { key: 'goal', label: t.legend_goal },
   ]);
 
-  let tokenEl: HTMLDivElement | undefined = $state();
-  let tokenX = $state(0);
-  let tokenY = $state(0);
-  let tokenSize = $state(0);
-  let tokenVisible = $state(false);
+  interface TokenData {
+    id: string;
+    x: number;
+    y: number;
+    size: number;
+    color: string;
+    visible: boolean;
+    tile: number;
+  }
+
+  let tokensContainer: HTMLDivElement | undefined = $state();
+  let tokenData = $state<TokenData[]>([]);
 
   const tilePositions = new Map<number, { x: number; y: number; w: number }>();
 
@@ -47,26 +65,61 @@
     });
   }
 
-  function applyTokenPos(n: number): void {
-    const pos = tilePositions.get(n);
-    if (!pos) return;
-    tokenX = pos.x;
-    tokenY = pos.y;
-    tokenSize = Math.max(12, Math.round(pos.w * 0.35));
-    tokenVisible = true;
+  const STACK_OFFSET = 8;
+
+  function updateTokenPositions(): void {
+    const players = get(allPlayers);
+    const lid = get(localId);
+    const localTile = get(tokenTile);
+
+    const entries: TokenData[] = [];
+
+    players.forEach((player, id) => {
+      const tileNum = id === lid ? localTile : player.position;
+      const pos = tilePositions.get(tileNum);
+      entries.push({
+        id,
+        x: pos ? pos.x : 0,
+        y: pos ? pos.y : 0,
+        size: pos ? Math.max(12, Math.round(pos.w * 0.35)) : 0,
+        color: player.color,
+        visible: !!pos && tileNum > 0,
+        tile: tileNum,
+      });
+    });
+
+    const tileGroups = new Map<number, string[]>();
+    for (const e of entries) {
+      if (!e.visible) continue;
+      const group = tileGroups.get(e.tile) ?? [];
+      group.push(e.id);
+      tileGroups.set(e.tile, group);
+    }
+    for (const e of entries) {
+      if (!e.visible) continue;
+      const group = tileGroups.get(e.tile);
+      if (!group || group.length <= 1) continue;
+      const idx = group.indexOf(e.id);
+      const offset = (idx - (group.length - 1) / 2) * STACK_OFFSET;
+      e.x += offset;
+    }
+
+    tokenData = entries;
   }
 
   onMount(() => {
     setTileData(tiles);
 
     const wrap = document.querySelector<HTMLElement>('.gb__board-wrap');
-    if (wrap && tokenEl) {
-      wrap.appendChild(tokenEl);
+    if (wrap && tokensContainer) {
+      wrap.appendChild(tokensContainer);
     }
 
     measureTiles();
 
-    const anchors = Array.from(document.querySelectorAll<HTMLAnchorElement>('a.tile'));
+    const anchors = Array.from(
+      document.querySelectorAll<HTMLAnchorElement>('a.tile'),
+    );
     const cleanup: Array<() => void> = [];
 
     for (const a of anchors) {
@@ -79,36 +132,35 @@
       cleanup.push(() => a.removeEventListener('click', handler));
     }
 
-    const unsubToken = tokenTile.subscribe((n) => {
-      if (n > 0) applyTokenPos(n);
-      else tokenVisible = false;
-    });
+    const unsubToken = tokenTile.subscribe(() => updateTokenPositions());
     cleanup.push(unsubToken);
+
+    const unsubPlayers = allPlayers.subscribe(() => updateTokenPositions());
+    cleanup.push(unsubPlayers);
 
     const onResize = () => {
       measureTiles();
-      const n = get(tokenTile);
-      if (n > 0) applyTokenPos(n);
+      updateTokenPositions();
     };
     window.addEventListener('resize', onResize);
     cleanup.push(() => window.removeEventListener('resize', onResize));
 
-    // Check for room param → lazy-load P2P and join room
     const params = new URLSearchParams(window.location.search);
     const room = params.get('room');
     if (room) {
       roomId.set(room);
       import('../lib/p2p').then(({ joinRoom, leaveRoom }) => {
-        const { players, turn, localId } = joinRoom(room);
-        const yjsCleanup = connectYjs(players, turn, localId);
+        const { players, turn, localId: lid } = joinRoom(room);
+        const yjsCleanup = connectYjs(players, turn, lid);
         cleanup.push(() => {
           yjsCleanup();
           leaveRoom();
         });
       });
+    } else {
+      initSinglePlayer();
     }
 
-    // Check for hash → go to tile
     const match = location.hash.match(/^#tile-(\d+)$/);
     if (match) {
       const n = parseInt(match[1], 10);
@@ -121,7 +173,9 @@
   $effect(() => {
     const n = $currentTile;
     if (typeof document === 'undefined') return;
-    document.querySelectorAll('a.tile.is-current').forEach((el) => el.classList.remove('is-current'));
+    document
+      .querySelectorAll('a.tile.is-current')
+      .forEach((el) => el.classList.remove('is-current'));
     if (n > 0) {
       const el = document.getElementById(`tile-${n}`);
       if (el) el.classList.add('is-current');
@@ -130,6 +184,10 @@
 </script>
 
 <Dice {t} />
+
+{#if $roomId}
+  <PlayerList {t} />
+{/if}
 
 <div class="gb__panel gb__legend-panel">
   <div class="gb__panel-title">{t.legend_title}</div>
@@ -146,10 +204,12 @@
 <TileContent {tiles} {t} />
 <EndOverlay {t} />
 
-<div
-  bind:this={tokenEl}
-  class="gb__token"
-  class:visible={tokenVisible}
-  style="--token-size: {tokenSize}px; transform: translate(calc({tokenX}px - 50%), calc({tokenY}px - 50%));"
-  aria-hidden="true"
-></div>
+<div bind:this={tokensContainer} aria-hidden="true">
+  {#each tokenData as tok (tok.id)}
+    <div
+      class="gb__token"
+      class:visible={tok.visible}
+      style="--token-color: {tok.color}; --token-size: {tok.size}px; transform: translate(calc({tok.x}px - 50%), calc({tok.y}px - 50%));"
+    ></div>
+  {/each}
+</div>

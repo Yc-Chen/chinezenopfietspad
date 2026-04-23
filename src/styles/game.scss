@@ -116,7 +116,7 @@ a { color: inherit; }
   width: var(--token-size, 16px);
   height: var(--token-size, 16px);
   border-radius: 50%;
-  background: #111;
+  background: var(--token-color, #111);
   border: 2px solid #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   pointer-events: none;
@@ -497,4 +497,51 @@ a { color: inherit; }
 @media (min-width: 768px) {
   .tile { font-size: 0.85rem; }
   .tile__title { font-size: 0.7rem; }
+}
+
+/* Player list */
+.gb__players-panel {
+  order: -1;
+
+  @media (min-width: 900px) {
+    order: 0;
+  }
+}
+
+.gb__player-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  padding: 4px 0;
+  border-radius: 4px;
+
+  &.gb__player-turn {
+    font-weight: 700;
+  }
+}
+
+.gb__player-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.gb__player-name {
+  flex: 1;
+  min-width: 0;
+}
+
+.gb__player-you {
+  color: #888;
+  font-weight: 400;
+}
+
+.gb__player-status {
+  font-size: 0.65rem;
+  color: #888;
+  flex-shrink: 0;
 }

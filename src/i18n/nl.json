@@ -30,5 +30,13 @@
   "legend_goal": "Finish!",
   "share_label": "Delen",
   "share_copied": "Link gekopieerd!",
-  "skip_turn": "Sla beurt over"
+  "skip_turn": "Sla beurt over",
+  "your_turn": "Jouw beurt",
+  "waiting_for": "Wachten...",
+  "player_label": "Speler",
+  "player_you": "(jij)",
+  "player_stuck_well": "Vast in de put",
+  "player_stuck_prison": "In de gevangenis",
+  "player_stuck_inn": "Rust in de herberg",
+  "players_title": "Spelers"
 }
