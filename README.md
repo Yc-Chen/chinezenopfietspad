@@ -9,9 +9,9 @@ See [`PLAN.md`](./PLAN.md) for the full product plan.
 
 ## How to add a tile
 
-Every tile lives in [`data/tiles/v1.yaml`](./data/tiles/v1.yaml) — one YAML file, keyed by tile number `"1"` through `"63"`. To fill in a new tile:
+Every tile lives in `src/data/tiles/v1_en.yaml` (English) and `src/data/tiles/v1_nl.yaml` (Dutch) — one YAML file per language, keyed by tile number `"1"` through `"63"`. To fill in a new tile:
 
-1. Open `data/tiles/v1.yaml`.
+1. Open `src/data/tiles/v1_en.yaml` (and `v1_nl.yaml` for Dutch).
 2. Find the entry for the tile number you want, e.g. `"7":`.
 3. Change `status: empty` to `status: filled` and add the fields:
 
@@ -28,7 +28,7 @@ Every tile lives in [`data/tiles/v1.yaml`](./data/tiles/v1.yaml) — one YAML fi
      icon: fa fa-mug-hot      # optional FontAwesome class
    ```
 
-4. Save. `hugo server` hot-reloads; refresh to see the tile on the board.
+4. Save. The dev server hot-reloads; refresh to see the tile on the board.
 
 Tile `"39"` is **reserved** — that's the counter-punch to the Amsterdam 750 book. Don't use it for a casual tile.
 
@@ -37,13 +37,30 @@ Hazard tiles (geese, well, maze, etc.) are already pre-seeded — leave them alo
 ## Local development
 
 ```sh
-# Dev server with hot reload
-hugo server
+npm install
 
-# Production build (outputs to ./public)
-hugo --minify
+# Dev server with hot reload
+npm run dev
+
+# Production build (outputs to ./dist)
+npm run build
+
+# Preview production build
+npm run preview
 ```
+
+## Multiplayer (P2P)
+
+Click "Share" to generate a room link. Open it in another browser — rolls sync live via WebRTC (no server needed). Without a `?room=` param, the game runs in single-player mode with no network activity.
 
 ## Deploy
 
-Pushes to `main` trigger `.github/workflows/deploy.yml`, which builds and publishes to GitHub Pages. The live URL is set by `baseURL` in `hugo.yaml` — update that when a custom domain is wired up.
+Pushes to `main` trigger `.github/workflows/deploy.yml`, which runs `npm run build` and publishes `dist/` to GitHub Pages.
+
+## Stack
+
+- **Astro** — static site generator (`output: 'static'`)
+- **Svelte 5** — interactive game island (`client:load`)
+- **Yjs + y-webrtc** — P2P state sync (lazy-loaded only in multiplayer)
+- **SCSS** — styles
+- **GitHub Pages** — hosting

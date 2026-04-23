@@ -81,3 +81,22 @@ Your next steps (from PLAN.md)
   4. Push to GitHub, go to repo Settings → Pages → Source = "GitHub Actions".
   5. When you buy the domain: update baseURL in hugo.yaml, add static/CNAME with the domain,
   set DNS records, enable HTTPS in repo settings.
+
+
+    1. PostHog — Open-source, self-hostable, free tier (1M events/mo). Built for product/event
+  analytics. You fire custom events like posthog.capture('dice_roll', {value: 4, tile:
+  'goose'}) and get funnels, session replays, heatmaps. Probably the best fit here.
+  2. Mixpanel — Free tier (20M events/mo). Purpose-built for event tracking. Similar custom
+  events approach. Hosted only, but generous free plan.
+  3. Amplitude — Similar to Mixpanel, free tier available. Strong for understanding user flows
+   through a game.
+  4. Custom + Supabase/Firebase — Roll your own: log events to a simple database table. Full    control, no third-party scripts. Firebase has a generous free tier and works well for
+  lightweight game telemetry.
+  5. GA4 custom events — GA4 can do custom events (gtag('event', 'roll_dice', {...})), but the
+   reporting UI is clunky for game-style event data. Workable if you want to keep it simple.
+
+  What I'd recommend: For a Ganzenbord game, PostHog hits the sweet spot — free, one script
+  tag, custom events are trivial to add, and you get session replay (watch people actually
+  play the game) for free. No cookie banner needed if you disable cookies in the config.
+
+  Want me to wire one of these into the game?
