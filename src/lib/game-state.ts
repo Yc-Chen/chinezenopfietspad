@@ -109,9 +109,7 @@ export function goToTile(n: number): void {
 export async function rollDice(): Promise<void> {
   if (get(rolling)) return;
 
-  const a = 1 + Math.floor(Math.random() * 6);
-  const b = 1 + Math.floor(Math.random() * 6);
-  const roll = a + b;
+  const roll = 1 + Math.floor(Math.random() * 6);
   const from = get(currentTile);
   const to = Math.max(1, Math.min(63, from + roll));
   const reduced = prefersReducedMotion();
