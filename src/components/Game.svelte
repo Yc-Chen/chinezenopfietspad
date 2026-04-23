@@ -1,8 +1,9 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import { get } from 'svelte/store';
   import type { TileMap } from '../lib/tiles';
   import type { I18nBundle } from '../lib/i18n';
-  import { currentTile, goToTile } from '../lib/game-state';
+  import { currentTile, tokenTile, goToTile } from '../lib/game-state';
   import Dice from './Dice.svelte';
   import TileContent from './TileContent.svelte';
   import EndOverlay from './EndOverlay.svelte';
@@ -20,7 +21,49 @@
     { key: 'goal', label: t.legend_goal },
   ]);
 
+  let tokenEl: HTMLDivElement | undefined = $state();
+  let tokenX = $state(0);
+  let tokenY = $state(0);
+  let tokenSize = $state(0);
+  let tokenVisible = $state(false);
+
+  const tilePositions = new Map<number, { x: number; y: number; w: number }>();
+
+  function measureTiles(): void {
+    const wrap = document.querySelector<HTMLElement>('.gb__board-wrap');
+    if (!wrap) return;
+    const wrapRect = wrap.getBoundingClientRect();
+    const anchors = wrap.querySelectorAll<HTMLAnchorElement>('a.tile');
+    tilePositions.clear();
+    anchors.forEach((a) => {
+      const n = parseInt(a.dataset.tile ?? '', 10);
+      if (Number.isNaN(n)) return;
+      const r = a.getBoundingClientRect();
+      tilePositions.set(n, {
+        x: r.left - wrapRect.left + wrap.scrollLeft + r.width / 2,
+        y: r.top - wrapRect.top + wrap.scrollTop + r.height / 2,
+        w: r.width,
+      });
+    });
+  }
+
+  function applyTokenPos(n: number): void {
+    const pos = tilePositions.get(n);
+    if (!pos) return;
+    tokenX = pos.x;
+    tokenY = pos.y;
+    tokenSize = Math.max(12, Math.round(pos.w * 0.35));
+    tokenVisible = true;
+  }
+
   onMount(() => {
+    const wrap = document.querySelector<HTMLElement>('.gb__board-wrap');
+    if (wrap && tokenEl) {
+      wrap.appendChild(tokenEl);
+    }
+
+    measureTiles();
+
     const anchors = Array.from(document.querySelectorAll<HTMLAnchorElement>('a.tile'));
     const cleanup: Array<() => void> = [];
 
@@ -33,6 +76,20 @@
       a.addEventListener('click', handler);
       cleanup.push(() => a.removeEventListener('click', handler));
     }
+
+    const unsubToken = tokenTile.subscribe((n) => {
+      if (n > 0) applyTokenPos(n);
+      else tokenVisible = false;
+    });
+    cleanup.push(unsubToken);
+
+    const onResize = () => {
+      measureTiles();
+      const n = get(tokenTile);
+      if (n > 0) applyTokenPos(n);
+    };
+    window.addEventListener('resize', onResize);
+    cleanup.push(() => window.removeEventListener('resize', onResize));
 
     const match = location.hash.match(/^#tile-(\d+)$/);
     if (match) {
@@ -70,3 +127,11 @@
 
 <TileContent {tiles} {t} />
 <EndOverlay {t} />
+
+<div
+  bind:this={tokenEl}
+  class="gb__token"
+  class:visible={tokenVisible}
+  style="--token-size: {tokenSize}px; transform: translate(calc({tokenX}px - 50%), calc({tokenY}px - 50%));"
+  aria-hidden="true"
+></div>

@@ -106,6 +106,33 @@ a { color: inherit; }
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding: 6px 6px 0.5rem;
+  position: relative;
+}
+
+.gb__token {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--token-size, 16px);
+  height: var(--token-size, 16px);
+  border-radius: 50%;
+  background: #111;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0;
+  transition: transform 120ms linear, opacity 180ms ease-out, width 180ms ease-out, height 180ms ease-out;
+}
+
+.gb__token.visible {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gb__token {
+    transition: opacity 180ms ease-out;
+  }
 }
 
 .gb__board {
@@ -282,7 +309,30 @@ a { color: inherit; }
   gap: 0.4rem;
 }
 
-.gb__roll-icon { font-size: 1.1rem; }
+.gb__roll-icon {
+  font-size: 1.1rem;
+  display: inline-block;
+  transform-origin: center;
+}
+
+.gb__roll-icon.rolling {
+  animation: gb-shake 180ms ease-in-out infinite;
+}
+
+@keyframes gb-shake {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25%      { transform: rotate(-14deg) scale(1.05); }
+  75%      { transform: rotate(14deg) scale(1.05); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gb__roll-icon.rolling { animation: none; }
+}
+
+.gb__roll[disabled] {
+  opacity: 0.7;
+  cursor: wait;
+}
 
 .gb__roll-result {
   font-variant-numeric: tabular-nums;
