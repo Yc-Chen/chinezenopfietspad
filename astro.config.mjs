@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [svelte()],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'nl'],
+    locales: ['en', 'nl', 'zh'],
     routing: {
       prefixDefaultLocale: false,
     },

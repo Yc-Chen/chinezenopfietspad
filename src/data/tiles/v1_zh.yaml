@@ -1,0 +1,311 @@
+# Editie 2026 — Chinese tile data
+
+"1":
+  status: empty
+
+"2":
+  status: empty
+
+"3":
+  status: empty
+
+"4":
+  status: filled
+  title: 这里没有山
+  body: 这里平坦，极其平坦。你永远不用担心汽车爬坡时引擎过热，因为根本没有坡可爬。
+  icon: fa fa-mountain
+
+"5":
+  status: hazard
+  hazard_type: goose
+  title: 鹅
+  body: "鹅！前进到下一只鹅的位置。"
+
+"6":
+  status: hazard
+  hazard_type: bridge
+  title: 桥
+  body: "走过桥，跳跃到第12格。"
+
+"7":
+  status: empty
+
+"8":
+  status: empty
+
+"9":
+  status: hazard
+  hazard_type: goose
+  title: 鹅
+  body: "鹅！前进到下一只鹅的位置。"
+
+"10":
+  status: empty
+
+"11":
+  status: empty
+
+"12":
+  status: filled
+  suit: environment
+  title: 下一分钟可能就会下雨
+  body: 雨说来就来。荷兰人用"Buienradar"（降雨雷达）App来查看是否会下雨，并据此安排出行计划。
+  icon: fa fa-cloud-rain
+
+"13":
+  status: empty
+
+"14":
+  status: hazard
+  hazard_type: goose
+  title: 鹅
+  body: "鹅！前进到下一只鹅的位置。"
+
+"15":
+  status: empty
+
+"16":
+  status: filled
+  title: 不提供热水
+  body: 如果你想在餐厅要一杯热水，你只能点茶，而且通常附带茶包和一块饼干或巧克力——即使你只想要热水，也得为整套茶水付钱。
+  icon: fa fa-mug-hot
+
+"17":
+  status: empty
+
+"18":
+  status: hazard
+  hazard_type: goose
+  title: 鹅
+  body: "鹅！前进到下一只鹅的位置。"
+
+"19":
+  status: hazard
+  hazard_type: inn
+  title: 旅馆
+  body: "在旅馆休息，跳过一个回合。"
+
+"20":
+  status: empty
+
+"21":
+  status: filled
+  title: 午饭就是午饭（三明治）
+  body: |
+    午饭时间，荷兰人拿出装在小塑料袋里的三明治——
+    这种袋子在超市有售，叫做"broodzakjes"（面包袋）。
+    就这些，午饭就这些。
+  icon: fa fa-bread-slice
+
+"22":
+  status: filled
+  title: 荷兰式派对
+  body: 荷兰人的聚会就是围坐一圈聊天，就这样。没有音乐，没有食物（顶多有小零食），没有游戏，也没有活动。
+  icon: fa fa-people-group
+
+"23":
+  status: hazard
+  hazard_type: goose
+  title: 鹅
+  body: "鹅！前进到下一只鹅的位置。"
+
+"24":
+  status: empty
+
+"25":
+  status: empty
+
+"26":
+  status: filled
+  title: 瓶盖不能扔
+  body: 根据欧盟规定，塑料瓶盖与瓶身连为一体，无法单独丢弃。
+  icon: fa fa-bottle-water
+
+"27":
+  status: hazard
+  hazard_type: goose
+  title: 鹅
+  body: "鹅！前进到下一只鹅的位置。"
+
+"28":
+  status: filled
+  title: 运费照收不误
+  body: 如果你网上购买一件小东西，即使价格低廉，也要支付运费。这里没有包邮一说。
+  icon: fa fa-truck
+
+"29":
+  status: empty
+
+"30":
+  status: empty
+
+"31":
+  status: hazard
+  hazard_type: well
+  title: 水井
+  body: "你掉进了水井。等待另一位玩家来救你。"
+
+"32":
+  status: hazard
+  hazard_type: goose
+  title: 鹅
+  body: "鹅！前进到下一只鹅的位置。"
+
+"33":
+  status: filled
+  title: 商店也是朝九晚五
+  body: 准确地说是九点到六点。但当你下班后，你会发现所有商店都关门了。只有超市还开着，也许营业到晚上十点。
+  icon: fa fa-store
+
+"34":
+  status: empty
+
+"35":
+  status: filled
+  title: 食物贵，啤酒还好
+  body: 荷兰人抱怨食物价格太高，但他们不抱怨啤酒的价格。
+  icon: fa fa-beer
+
+"36":
+  status: hazard
+  hazard_type: goose
+  title: 鹅
+  body: "鹅！前进到下一只鹅的位置。"
+
+"37":
+  status: empty
+
+"38":
+  status: filled
+  title: 日程提前半年排满
+  body: 当你还在想着下周做什么时，你的荷兰朋友们早已把未来六个月的行程安排好了。
+  icon: fa fa-calendar
+
+"39":
+  status: reserved
+  suit: null
+  title: "第39格｜自行车路怒"
+  body: 荷兰人骑自行车时特别容易发火，哪怕自己骑错了方向。如果你骑得不够快，或者不该在那条路上出现，你肯定会被"教育"一番。
+  did_you_know: null
+
+"40":
+  status: filled
+  title: 罢工也提前计划好
+  body: 火车司机提前一年排好班次，然后可能去罢工——即便如此，也会提前几周宣布。
+  icon: fa fa-train
+
+"41":
+  status: hazard
+  hazard_type: goose
+  title: 鹅
+  body: "鹅！前进到下一只鹅的位置。"
+
+"42":
+  status: filled
+  title: 林堡语是另一种语言
+  body: |
+    荷兰人嘲笑林堡人的方言，好像那是一门完全不同的语言。
+    对于中国耳朵来说，这个差异比北京话和东北话的差异小多了。
+  icon: fa fa-ear-listen
+
+"43":
+  status: empty
+
+"44":
+  status: empty
+
+"45":
+  status: hazard
+  hazard_type: goose
+  title: 鹅
+  body: "鹅！前进到下一只鹅的位置。"
+
+"46":
+  status: empty
+
+"47":
+  status: empty
+
+"48":
+  status: filled
+  title: 炒饭炒面不是中国菜
+  body: |
+    荷兰人只知道两道"中国菜"：炒饭（nasi）和炒面（bami），而这两道菜其实是印尼菜。
+  icon: fa fa-bowl-food
+
+"49":
+  status: empty
+
+"50":
+  status: hazard
+  hazard_type: goose
+  title: 鹅
+  body: "鹅！前进到下一只鹅的位置。"
+
+"51":
+  status: empty
+
+"52":
+  status: hazard
+  hazard_type: prison
+  title: 监狱｜火车停运
+  body: |
+    身陷囹圄。
+    天气太热（40°C），火车无法运行。
+    等待另一位玩家来替换你。
+  did_you_know: 中国高铁全年运行，从零下20°C到40°C，专为极端天气条件设计。
+
+"53":
+  status: empty
+
+"54":
+  status: hazard
+  hazard_type: goose
+  title: 鹅
+  body: "鹅！前进到下一只鹅的位置。"
+
+"55":
+  status: filled
+  title: 油炸是最受欢迎的烹饪方式
+  body: 鱼……炸的，bitterballen（肉丸）……炸的，kroket（可乐饼）……炸的，frikandel（肉肠）……炸的，薯条……炸的，诸如此类。
+  icon: fa fa-hotdog
+
+"56":
+  status: empty
+
+"57":
+  status: empty
+
+"58":
+  status: hazard
+  hazard_type: death
+  title: 死亡
+  body: "游戏结束。从第1格重新开始。"
+
+"59":
+  status: hazard
+  hazard_type: goose
+  title: 鹅
+  body: "鹅！前进到下一只鹅的位置。"
+
+"60":
+  status: hazard
+  hazard_type: maze
+  title: 迷宫｜扑热息痛包治百病
+  body: |
+    迷失在迷宫中。
+    当你去看全科医生时，他们通常会建议你喝热水配扑热息痛，说你会没事的。
+    而且，预约全科医生要等两周，通常到那时你早已自愈了。
+    退回到第39格。
+
+"61":
+  status: empty
+
+"62":
+  status: empty
+
+"63":
+  status: hazard
+  hazard_type: goal
+  title: 终点
+  body: "你到达了终点。点击"结束游戏"，了解这个游戏的由来。"

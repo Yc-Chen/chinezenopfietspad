@@ -1,6 +1,7 @@
 import yaml from 'js-yaml';
 import enRaw from '../data/tiles/v1_en.yaml?raw';
 import nlRaw from '../data/tiles/v1_nl.yaml?raw';
+import zhRaw from '../data/tiles/v1_zh.yaml?raw';
 
 export type TileStatus = 'empty' | 'filled' | 'hazard' | 'reserved';
 
@@ -18,7 +19,10 @@ export type TileMap = Record<string, Tile>;
 
 export const tilesEn = yaml.load(enRaw) as TileMap;
 export const tilesNl = yaml.load(nlRaw) as TileMap;
+export const tilesZh = yaml.load(zhRaw) as TileMap;
 
-export function getTiles(lang: 'en' | 'nl'): TileMap {
-  return lang === 'nl' ? tilesNl : tilesEn;
+export function getTiles(lang: 'en' | 'nl' | 'zh'): TileMap {
+  if (lang === 'nl') return tilesNl;
+  if (lang === 'zh') return tilesZh;
+  return tilesEn;
 }
