@@ -18,6 +18,7 @@
   import TileContent from './TileContent.svelte';
   import EndOverlay from './EndOverlay.svelte';
   import PlayerList from './PlayerList.svelte';
+  import BoardPath from './BoardPath.svelte';
 
   let { tiles, t }: { tiles: TileMap; t: I18nBundle } = $props();
 
@@ -183,6 +184,7 @@
   });
 </script>
 
+<BoardPath />
 <Dice {t} />
 
 {#if $roomId}
