@@ -24,3 +24,6 @@ npm-debug.log*
 
 # SvelteKit
 .svelte-kit
+
+.DS_Store
+logs/
