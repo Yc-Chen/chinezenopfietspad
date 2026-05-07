@@ -1,0 +1,82 @@
+---
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import type { Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const links: Array<{ code: Lang; label: string }> = [
+  { code: 'en', label: 'EN — English' },
+  { code: 'nl', label: 'NL — Nederlands' },
+  { code: 'zh', label: '中文' },
+];
+const current = links.find((l) => l.code === lang)!;
+---
+<div class="lang-switch">
+  <button
+    type="button"
+    class="lang-switch__btn"
+    aria-haspopup="listbox"
+    aria-expanded="false"
+    id="lang-btn"
+  >
+    {current.label}
+    <span class="lang-switch__caret" aria-hidden="true">▾</span>
+  </button>
+  <ul class="lang-switch__menu" role="listbox" aria-labelledby="lang-btn" hidden>
+    {links.map((l) => (
+      <li role="option" aria-selected={lang === l.code}>
+        <a
+          href={getRelativeLocaleUrl(l.code, '')}
+          lang={l.code}
+          aria-current={lang === l.code ? 'page' : undefined}
+          class:list={[{ 'is-active': lang === l.code }]}
+        >
+          {l.label}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<script>
+  const btn = document.getElementById('lang-btn')!;
+  const menu = btn.nextElementSibling as HTMLElement;
+
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    menu.hidden = open;
+  });
+
+  const from = document.documentElement.lang || 'unknown';
+  menu.querySelectorAll<HTMLAnchorElement>('a[lang]').forEach((a) => {
+    a.addEventListener('click', () => {
+      const to = a.getAttribute('lang') ?? 'unknown';
+      if (to === from) return;
+      const ph = (window as unknown as { posthog?: { capture: Function } }).posthog;
+      ph?.capture(
+        'language_switched',
+        { from, to },
+        { transport: 'sendBeacon' },
+      );
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!btn.contains(e.target as Node) && !menu.contains(e.target as Node)) {
+      btn.setAttribute('aria-expanded', 'false');
+      menu.hidden = true;
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      btn.setAttribute('aria-expanded', 'false');
+      menu.hidden = true;
+      btn.focus();
+    }
+  });
+</script>

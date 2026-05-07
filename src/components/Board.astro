@@ -1,0 +1,20 @@
+---
+import Tile from './Tile.astro';
+import type { TileMap } from '../lib/tiles';
+
+interface Props {
+  tiles: TileMap;
+  boardLabel: string;
+  tileWord: string;
+}
+
+const { tiles, boardLabel, tileWord } = Astro.props;
+const numbers = Array.from({ length: 63 }, (_, i) => i + 1);
+---
+<div class="gb__board-wrap">
+  <ol class="gb__board" role="list" aria-label={boardLabel}>
+    {numbers.map((n) => (
+      <Tile number={n} tile={tiles[String(n)]} tileWord={tileWord} />
+    ))}
+  </ol>
+</div>

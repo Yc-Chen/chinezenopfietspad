@@ -1,0 +1,20 @@
+---
+const enabled = !!import.meta.env.PUBLIC_POSTHOG_KEY;
+---
+{enabled && (
+  <script>
+    import posthog from 'posthog-js';
+
+    const key = import.meta.env.PUBLIC_POSTHOG_KEY;
+    const lang = document.documentElement.lang || 'unknown';
+
+    posthog.init(key, {
+      api_host: 'https://eu.i.posthog.com',
+      capture_exceptions: true,
+      autocapture: true,
+      capture_pageview: true,
+      persistence: 'localStorage+cookie',
+    });
+    posthog.register({ lang });
+  </script>
+)}

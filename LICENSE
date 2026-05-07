@@ -1,0 +1,37 @@
+This project is dual-licensed: code under Apache 2.0, content under
+Creative Commons Attribution-ShareAlike 4.0 International.
+
+------------------------------------------------------------------------
+
+CODE — Apache License, Version 2.0
+See LICENSE-CODE for the full text, or
+https://www.apache.org/licenses/LICENSE-2.0
+
+Covers everything required to build and run the site, including but not
+limited to:
+
+  src/components/        (.astro, .svelte sources)
+  src/layouts/
+  src/lib/
+  src/pages/
+  src/styles/
+  astro.config.mjs, svelte.config.js, tsconfig.json, package.json,
+  and other build / configuration files
+
+------------------------------------------------------------------------
+
+CONTENT — Creative Commons Attribution-ShareAlike 4.0 International
+(CC BY-SA 4.0)
+See LICENSE-CONTENT for the full text, or
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Covers the editorial material that makes the site what it is, including
+but not limited to:
+
+  src/data/tiles/*.yaml  (tile texts in EN / NL / ZH)
+  src/i18n/*.json        (UI string translations)
+  README.md
+  any other prose or documentation
+
+Attribution should credit the project as "Chinezen op Fietspad" with a
+link to the source repository.

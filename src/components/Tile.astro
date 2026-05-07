@@ -1,0 +1,44 @@
+---
+import type { Tile } from '../lib/tiles';
+
+interface Props {
+  number: number;
+  tile: Tile | undefined;
+  tileWord: string;
+}
+
+const { number, tile, tileWord } = Astro.props;
+const t = tile ?? {};
+const status = t.status ?? 'empty';
+const hazard = t.hazard_type ?? '';
+
+const classes = ['tile', `tile--${status}`];
+if (hazard) classes.push(`tile--hazard-${hazard}`);
+
+const labelParts = [t.mechanic_label, t.title].filter(Boolean);
+const label = labelParts.length
+  ? `${tileWord} ${number}: ${labelParts.join(' — ')}`
+  : `${tileWord} ${number}`;
+---
+<li class="gb__cell" data-tile={number}>
+  <a
+    id={`tile-${number}`}
+    href={`#tile-${number}`}
+    class={classes.join(' ')}
+    data-tile={number}
+    aria-label={label}
+  >
+    <span class="tile__num">{number}</span>
+    {t.icon && (
+      <span class="tile__icon" aria-hidden="true">
+        <i class={t.icon}></i>
+      </span>
+    )}
+    {t.mechanic_label && (
+      <span class="tile__mechanic-label">{t.mechanic_label}</span>
+    )}
+    {t.title && status !== 'empty' && (
+      <span class="tile__title">{t.title}</span>
+    )}
+  </a>
+</li>

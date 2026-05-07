@@ -1,0 +1,21 @@
+// Hazard colors
+$gb-hazard-goose:  #b7e4c7;
+$gb-hazard-bridge: #90caf9;
+$gb-hazard-inn:    #ffd180;
+$gb-hazard-well:   #78909c;
+$gb-hazard-maze:   #b39ddb;
+$gb-hazard-prison: #757575;
+$gb-hazard-death:  #263238;
+$gb-hazard-goal:   #ffd54f;
+
+// Board layout tokens
+$gb-tile-min: 44px;
+$gb-tile-max: 96px;
+$gb-tile-gap: 4px;
+$gb-tile-radius: 10px;
+$gb-corner-big: 50%;
+$gb-corner-small: 10px;
+
+// Z-index scale
+$gb-z-sticky:  100;
+$gb-z-overlay: 1000;

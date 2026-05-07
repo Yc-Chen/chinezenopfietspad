@@ -1,0 +1,49 @@
+---
+import '../styles/game.scss';
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+import PostHog from '../components/PostHog.astro';
+import type { Lang } from '../lib/i18n';
+
+interface Props {
+  title: string;
+  lang: Lang;
+  description?: string;
+}
+
+const { title, lang, description } = Astro.props;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <PostHog />
+  </head>
+  <body>
+    <header class="site-header">
+      <a
+        href="https://github.com/Yc-Chen/chinezenopfietspad"
+        class="site-header__github"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+      </a>
+      <LanguageSwitcher lang={lang} />
+    </header>
+    <slot />
+  </body>
+</html>

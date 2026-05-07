@@ -1,0 +1,29 @@
+# Astro
+/dist/
+/.astro/
+
+# Node
+node_modules/
+*.log
+npm-debug.log*
+.npm
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode-test
+
+# OS
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo
+
+# SvelteKit
+.svelte-kit
+
+.DS_Store
+logs/
