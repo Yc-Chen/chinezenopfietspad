@@ -2,7 +2,7 @@
 import '../styles/game.scss';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 import PostHog from '../components/PostHog.astro';
-import type { Lang } from '../lib/i18n';
+import { getI18n, type Lang } from '../lib/i18n';
 
 interface Props {
   title: string;
@@ -11,6 +11,7 @@ interface Props {
 }
 
 const { title, lang, description } = Astro.props;
+const t = getI18n(lang);
 ---
 <!doctype html>
 <html lang={lang}>
@@ -42,6 +43,12 @@ const { title, lang, description } = Astro.props;
       >
         <i class="fa-brands fa-github" aria-hidden="true"></i>
       </a>
+      <a
+        href="https://github.com/Yc-Chen/chinezenopfietspad"
+        class="site-header__contribute"
+        target="_blank"
+        rel="noopener noreferrer"
+      >{t.contribute_label}</a>
       <LanguageSwitcher lang={lang} />
     </header>
     <slot />
