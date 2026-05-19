@@ -12,6 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
     "@astrojs/svelte": "^7.0.0",
     "astro": "^5.0.0",
     "posthog-js": "^1.372.1",
