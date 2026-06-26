@@ -1,0 +1,38 @@
+---
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import type { TileMap } from '../lib/tiles';
+import type { I18nBundle, Lang } from '../lib/i18n';
+import { formatBody } from '../lib/format';
+
+interface Props {
+  tiles: TileMap;
+  t: I18nBundle;
+  lang: Lang;
+}
+
+const { tiles, t, lang } = Astro.props;
+
+const facts = Array.from({ length: 63 }, (_, i) => i + 1)
+  .map((n) => ({ n, tile: tiles[String(n)] }))
+  .filter(({ tile }) => tile && tile.title && tile.body);
+---
+<section class="gb__facts" aria-labelledby="facts-heading">
+  <div class="gb__facts-head">
+    <h1 id="facts-heading" class="gb__facts-title">{t.facts_title}</h1>
+    <p class="gb__facts-intro">{t.facts_intro}</p>
+    <a class="gb__facts-back" href={getRelativeLocaleUrl(lang, '')}>{t.back_to_game}</a>
+  </div>
+
+  <ol class="gb__facts-grid" role="list">
+    {facts.map(({ n, tile }) => (
+      <li class="gb__fact">
+        <div class="gb__fact-top">
+          {tile.icon && <i class={`gb__fact-icon ${tile.icon}`} aria-hidden="true"></i>}
+          <span class="gb__fact-num">{t.tile_word} {n}</span>
+        </div>
+        <h2 class="gb__fact-title">{tile.title}</h2>
+        <div class="gb__fact-body" set:html={formatBody(tile.body!)} />
+      </li>
+    ))}
+  </ol>
+</section>

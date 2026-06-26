@@ -13,6 +13,15 @@ const links: Array<{ code: Lang; label: string }> = [
   { code: 'zh', label: '中文' },
 ];
 const current = links.find((l) => l.code === lang)!;
+
+// Preserve the current sub-path (e.g. "facts") when switching languages,
+// stripping any leading locale segment.
+const locales: Lang[] = ['en', 'nl', 'zh'];
+const segments = Astro.url.pathname.split('/').filter(Boolean);
+if (segments.length && locales.includes(segments[0] as Lang)) {
+  segments.shift();
+}
+const subPath = segments.join('/');
 ---
 <div class="lang-switch">
   <button
@@ -29,7 +38,7 @@ const current = links.find((l) => l.code === lang)!;
     {links.map((l) => (
       <li role="option" aria-selected={lang === l.code}>
         <a
-          href={getRelativeLocaleUrl(l.code, '')}
+          href={getRelativeLocaleUrl(l.code, subPath)}
           lang={l.code}
           aria-current={lang === l.code ? 'page' : undefined}
           class:list={[{ 'is-active': lang === l.code }]}

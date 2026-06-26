@@ -1,4 +1,5 @@
 ---
+import { getRelativeLocaleUrl } from 'astro:i18n';
 import '../styles/game.scss';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 import PostHog from '../components/PostHog.astro';
@@ -43,6 +44,9 @@ const t = getI18n(lang);
       >
         <i class="fa-brands fa-github" aria-hidden="true"></i>
       </a>
+      <a href={getRelativeLocaleUrl(lang, 'facts')} class="site-header__facts"
+        >{t.read_all_facts}</a
+      >
       <a
         href="https://github.com/Yc-Chen/chinezenopfietspad"
         class="site-header__contribute"

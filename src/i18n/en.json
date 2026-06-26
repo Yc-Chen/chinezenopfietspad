@@ -34,5 +34,10 @@
   "player_stuck_inn": "Resting at inn",
   "players_title": "Players",
   "add_player": "Add player",
-  "contribute_label": "Contribute"
+  "contribute_label": "Contribute",
+  "read_all_facts": "Read all facts",
+  "facts_title": "All the fun facts about the Netherlands",
+  "facts_intro": "Every tile's joke, in one go — no dice required.",
+  "back_to_game": "← Back to the game",
+  "facts_page_title": "Fun facts — Chinezen op Fietspad"
 }

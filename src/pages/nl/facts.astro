@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import FactsList from '../../components/FactsList.astro';
+import { getTiles } from '../../lib/tiles';
+import { getI18n } from '../../lib/i18n';
+
+const lang = 'nl' as const;
+const t = getI18n(lang);
+const tiles = getTiles(lang);
+---
+<Base title={t.facts_page_title} lang={lang} description={t.facts_intro}>
+  <div class="gb">
+    <FactsList tiles={tiles} t={t} lang={lang} />
+  </div>
+</Base>
