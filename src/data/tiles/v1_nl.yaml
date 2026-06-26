@@ -173,7 +173,10 @@
   body: "Gans! Ga door naar de volgende gans."
 
 "37":
-  status: empty
+  status: filled
+  title: Airco is hier niet standaard
+  body: Tijdens een hittegolf veranderen Nederlandse huizen in stenen ovens. Airco is gewoon niet de standaard; de meeste huizen en gebouwen zijn gebouwd om warmte binnen te houden, niet buiten. En als je in een appartement woont, mag je er van de VVE vaak toch geen installeren. Kinderdagverblijven en scholen, waarvan de gebouwen ook geen airco hebben, lassen gewoon een vrije dag in. Het officiële koelsysteem; 's nachts een raam open, overdag de gordijnen dicht, en een klein ventilatortje kopen dat de warme lucht beleefd rondblaast.
+  icon: fa fa-fan
 
 "38":
   status: filled
@@ -188,9 +191,9 @@
 
 "40":
   status: filled
-  title: Stakingen zijn ook ingepland
-  body: Treinen hebben hun dienstregeling een jaar van tevoren gepland, inclusief stakingen — die ook nog eens weken van tevoren worden aangekondigd, zodat je je reis tijdig kunt plannen.
-  icon: fa fa-train
+  title: 40 graden en het land smelt
+  body: Het Nederlandse hitterecord is 40,7°C. Als de thermometer stijgt, gaan treinen langzamer rijden en is het hele land het erover eens dat het veel te warm is. Er is nog steeds geen airco, dus een natte theedoek en dat kleine ventilatortje vormen het nationale koelsysteem.
+  icon: fa fa-temperature-high
 
 "41":
   status: hazard
@@ -207,7 +210,10 @@
   icon: fa fa-ear-listen
 
 "43":
-  status: empty
+  status: filled
+  title: Stakingen zijn ook ingepland
+  body: Treinen hebben hun dienstregeling een jaar van tevoren gepland, inclusief stakingen — die ook nog eens weken van tevoren worden aangekondigd, zodat je je reis tijdig kunt plannen.
+  icon: fa fa-train
 
 "44":
   status: empty

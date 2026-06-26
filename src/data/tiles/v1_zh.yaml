@@ -173,7 +173,10 @@
   body: "鹅！前进到下一只鹅的位置。"
 
 "37":
-  status: empty
+  status: filled
+  title: 空调不是标配
+  body: 一到热浪来袭，荷兰的房子就变成砖砌的烤箱。空调根本不是标配——大多数房子和楼房的设计是为了把热量留在屋里，而不是挡在外面。而如果你住在公寓里，业主委员会（VVE）通常也不允许你安装。托儿所和学校的楼里同样没有空调，于是干脆放假一天。官方的"降温系统"是：晚上开窗，白天拉窗帘，再买一台小风扇，把热空气温柔地搅一搅。
+  icon: fa fa-fan
 
 "38":
   status: filled
@@ -188,9 +191,9 @@
 
 "40":
   status: filled
-  title: 罢工也提前安排
-  body: 火车的运行时刻表提前一年制定，包括罢工在内，都会提前几周公布——这样你就可以提前安排好出行了。
-  icon: fa fa-train
+  title: 40度，全国融化
+  body: 荷兰的高温纪录是40.7°C。气温一旦飙升，火车减速，全国上下一致认为"实在太热了"。然而依旧没有空调——于是一条湿毛巾和那台小风扇，就成了全国的降温系统。
+  icon: fa fa-temperature-high
 
 "41":
   status: hazard
@@ -207,7 +210,10 @@
   icon: fa fa-ear-listen
 
 "43":
-  status: empty
+  status: filled
+  title: 罢工也提前安排
+  body: 火车的运行时刻表提前一年制定，包括罢工在内，都会提前几周公布——这样你就可以提前安排好出行了。
+  icon: fa fa-train
 
 "44":
   status: empty

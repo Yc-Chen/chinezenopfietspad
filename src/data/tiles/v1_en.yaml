@@ -173,7 +173,10 @@
   body: "Goose! Move forward to the next goose."
 
 "37":
-  status: empty
+  status: filled
+  title: Airco is not standard here
+  body: During a heat wave Dutch houses turn into brick ovens. Air conditioning simply isn't the default; most houses and buildings are built to keep heat in, not out. And if you live in an apartment, the VVE (homeowners' association) often won't let you install one anyway. Daycares and schools, whose buildings have no airco either, just call the day off. The official cooling system; open a window at night, close the curtains by day, and buy a tiny ventilator that politely stirs the hot air around.
+  icon: fa fa-fan
 
 "38":
   status: filled
@@ -188,9 +191,9 @@
 
 "40":
   status: filled
-  title: Train strikes are planned as well
-  body: Trains have their schedule planned one year in advance, including strikes, which will be announced a few weeks in advance, so that you can plan your trip accordingly.
-  icon: fa fa-train
+  title: 40 degrees and the country melts
+  body: The Dutch heat record is 40.7°C. When the thermometer climbs, trains slow down and the whole nation agrees it is way too hot. There is still no airco, so a wet tea towel and that little ventilator become the national cooling system.
+  icon: fa fa-temperature-high
 
 "41":
   status: hazard
@@ -207,7 +210,10 @@
   icon: fa fa-ear-listen
 
 "43":
-  status: empty
+  status: filled
+  title: Train strikes are planned as well
+  body: Trains have their schedule planned one year in advance, including strikes, which will be announced a few weeks in advance, so that you can plan your trip accordingly.
+  icon: fa fa-train
 
 "44":
   status: empty
