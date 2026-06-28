@@ -22,22 +22,33 @@
 
 </script>
 
-<section id="tile-content" class="gb__panel gb__content" aria-live="polite">
+<section
+  id="tile-content"
+  class="gb__panel gb__content"
+  class:gb__content--has-image={tile?.image}
+  aria-live="polite"
+>
   {#key $currentTile}
-    <div in:fly={flyConfig}>
-      {#if !tile}
-        <p class="gb__hint">{t.hint_start}</p>
-      {:else}
-        <p class="tile-pos">{t.tile_word} {$currentTile}</p>
-        {#if tile.title}
-          <h2>{tile.title}</h2>
-        {/if}
-        {#if tile.body}
-          {@html formatBody(tile.body)}
-        {:else if !tile.status || tile.status === 'empty'}
-          <p class="gb__hint">{t.hint_empty}</p>
-        {/if}
+    <div class="gb__content-fly" in:fly={flyConfig}>
+      {#if tile?.image}
+        <img class="gb__content-bg" src={tile.image} alt={tile.image_alt ?? ''} />
+        <div class="gb__content-scrim" aria-hidden="true"></div>
       {/if}
+      <div class="gb__content-inner">
+        {#if !tile}
+          <p class="gb__hint">{t.hint_start}</p>
+        {:else}
+          <p class="tile-pos">{t.tile_word} {$currentTile}</p>
+          {#if tile.title}
+            <h2>{tile.title}</h2>
+          {/if}
+          {#if tile.body}
+            {@html formatBody(tile.body)}
+          {:else if !tile.status || tile.status === 'empty'}
+            <p class="gb__hint">{t.hint_empty}</p>
+          {/if}
+        {/if}
+      </div>
     </div>
   {/key}
 </section>

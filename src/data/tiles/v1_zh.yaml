@@ -29,7 +29,12 @@
   body: "走过桥，跳跃到第12格。"
 
 "7":
-  status: empty
+  status: filled
+  title: 铁路永远在维修
+  body: 几乎每个周末打开出行规划，全国一半的铁路都因"维修"（werkzaamheden）而封闭。你原本的直达车会悄悄变成：先坐一段火车，再换接驳巴士，然后又上火车。官方的维修地图看起来就像整个铁路网都停运了——你自己看吧。
+  icon: fa fa-screwdriver-wrench
+  image: /tiles/no-train-map.jpg
+  image_alt: 荷兰铁路地图截图，几乎每条线路都因维修而封闭
 
 "8":
   status: empty

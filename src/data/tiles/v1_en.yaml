@@ -29,7 +29,12 @@
   body: "Take the bridge and jump ahead to tile 12."
 
 "7":
-  status: empty
+  status: filled
+  title: The rails are always under maintenance
+  body: Open the journey planner on almost any weekend and half the country's tracks are blocked for 'werkzaamheden' (engineering works). Your direct train quietly becomes a train, then a replacement bus, then another train. The official maintenance map can look like the entire network is shut; see for yourself.
+  icon: fa fa-screwdriver-wrench
+  image: /tiles/no-train-map.jpg
+  image_alt: Screenshot of the Dutch railway map with nearly every line blocked for maintenance
 
 "8":
   status: empty

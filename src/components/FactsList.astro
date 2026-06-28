@@ -32,6 +32,14 @@ const facts = Array.from({ length: 63 }, (_, i) => i + 1)
         </div>
         <h2 class="gb__fact-title">{tile.title}</h2>
         <div class="gb__fact-body" set:html={formatBody(tile.body!)} />
+        {tile.image && (
+          <img
+            class="gb__fact-img"
+            src={tile.image}
+            alt={tile.image_alt ?? tile.title}
+            loading="lazy"
+          />
+        )}
       </li>
     ))}
   </ol>

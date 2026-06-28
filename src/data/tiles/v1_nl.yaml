@@ -29,7 +29,12 @@
   body: "Neem de brug en spring vooruit naar vakje 12."
 
 "7":
-  status: empty
+  status: filled
+  title: De rails zijn altijd in onderhoud
+  body: Open de reisplanner op bijna elk weekend en de helft van de sporen is geblokkeerd voor werkzaamheden. Je directe trein wordt stilletjes een trein, dan een stopbus, dan weer een trein. De officiële onderhoudskaart lijkt soms wel het hele netwerk plat te leggen; zie zelf.
+  icon: fa fa-screwdriver-wrench
+  image: /tiles/no-train-map.jpg
+  image_alt: Screenshot van de Nederlandse spoorkaart waarop bijna elke lijn geblokkeerd is voor onderhoud
 
 "8":
   status: empty
