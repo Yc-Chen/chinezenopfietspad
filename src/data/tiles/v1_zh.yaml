@@ -35,6 +35,8 @@
   icon: fa fa-screwdriver-wrench
   image: /tiles/no-train-map.jpg
   image_alt: 荷兰铁路地图截图，几乎每条线路都因维修而封闭
+  contributor: Little Red
+  contributor_platform: 小红书
 
 "8":
   status: empty

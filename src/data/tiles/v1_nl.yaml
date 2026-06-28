@@ -35,6 +35,8 @@
   icon: fa fa-screwdriver-wrench
   image: /tiles/no-train-map.jpg
   image_alt: Screenshot van de Nederlandse spoorkaart waarop bijna elke lijn geblokkeerd is voor onderhoud
+  contributor: Little Red
+  contributor_platform: 小红书
 
 "8":
   status: empty

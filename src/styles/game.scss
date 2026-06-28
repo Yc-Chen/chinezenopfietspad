@@ -599,6 +599,18 @@ a { color: inherit; }
   color: #fff;
 }
 
+/* Contributor credit (game panel) */
+.gb__credit {
+  margin: 0.75rem 0 0;
+  font-size: 0.72rem;
+  font-style: italic;
+  color: #999;
+}
+
+.gb__content--has-image .gb__credit {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 /* Standalone facts page */
 .gb__facts-head {
   text-align: center;
@@ -693,6 +705,15 @@ a { color: inherit; }
   margin-top: 0.75rem;
   border-radius: 8px;
   border: 1px solid #eee;
+}
+
+.gb__fact-credit {
+  margin: 0.75rem 0 0;
+  padding-top: 0.6rem;
+  border-top: 1px solid #eee;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: #999;
 }
 
 /* End overlay */

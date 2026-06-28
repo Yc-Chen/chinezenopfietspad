@@ -47,6 +47,13 @@
           {:else if !tile.status || tile.status === 'empty'}
             <p class="gb__hint">{t.hint_empty}</p>
           {/if}
+          {#if tile.contributor}
+            <p class="gb__credit">
+              {t.contributed_by} {tile.contributor}{tile.contributor_platform
+                ? ` · ${tile.contributor_platform}`
+                : ''}
+            </p>
+          {/if}
         {/if}
       </div>
     </div>

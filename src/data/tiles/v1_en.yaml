@@ -35,6 +35,8 @@
   icon: fa fa-screwdriver-wrench
   image: /tiles/no-train-map.jpg
   image_alt: Screenshot of the Dutch railway map with nearly every line blocked for maintenance
+  contributor: Little Red
+  contributor_platform: 小红书
 
 "8":
   status: empty

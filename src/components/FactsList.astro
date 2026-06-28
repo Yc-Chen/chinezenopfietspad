@@ -40,6 +40,11 @@ const facts = Array.from({ length: 63 }, (_, i) => i + 1)
             loading="lazy"
           />
         )}
+        {tile.contributor && (
+          <p class="gb__fact-credit">
+            {`${t.contributed_by} ${tile.contributor}${tile.contributor_platform ? ` · ${tile.contributor_platform}` : ''}`}
+          </p>
+        )}
       </li>
     ))}
   </ol>

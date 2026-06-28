@@ -14,6 +14,8 @@ export interface Tile {
   icon?: string;
   image?: string;
   image_alt?: string;
+  contributor?: string;
+  contributor_platform?: string;
 }
 
 export type TileMap = Record<string, Tile>;
